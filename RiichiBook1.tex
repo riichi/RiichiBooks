@@ -9,9 +9,15 @@
 \usepackage{blindtext,tgpagella,textcomp,amsmath,tipa,lipsum,eurosym}
 % graphic commands
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage{graphicx, graphics,color,wrapfig,tikz} 
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{graphics}
+\usepackage{color}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usepackage{mahjong-hand}
 \usepackage[abs]{overpic}
 \usepackage[dvipdfmx]{pict2e}
+\usepackage{adjustbox}
 \usepackage[dvipdfmx,colorlinks=true, urlcolor={blue!50!blue}, citecolor={blue!50!blue}, linkcolor={MyBlue}]{hyperref}
 
 % To remove page numbers from TOC
@@ -59,6 +65,9 @@
 \newcommand{\emj}{\end{mj}}
 % Red Five
 \def\rfs{{\color{red!75!black} \chiwusuo}} \def\rfd{{\color{red!75!black} \chiwutong}} \def\rfw{{\color{red!75!black} \chiwuwan}}
+% Tiles.
+\newcommand{\InlineTile}[1]{\adjustbox{margin*=0ex -0.5ex 0ex 0ex}{\DrawHand{#1}{1.5em}}}
+\newcommand{\LargeHand}[1]{\center\DrawHand{#1}{2.2em}\endcenter}
 % List styles
 \newcommand{\be}{\begin{enumerate}} \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bq}{\begin{quote}} \newcommand{\eq}{\end{quote}}
@@ -131,7 +140,7 @@
 \vspace*{.11\textheight} 
 
 %Version \theversion\\
-{\Large Version \tong{3}}\\
+{\Large Version \InlineTile{p3}}\\
 
 \vspace*{.07\textheight} 
 
@@ -157,10 +166,13 @@ under the terms of the Creative Commons Attribution NonCommercial 3.0 Unported L
 
 \vspace{.2in}
 \noindent
-Cover photo \copyright ~2015 Katar\'{i}na M\'{o}zov\'{a}, Courtesy of Riichi Mahjong Slovakia. 
+Cover photo \copyright ~2015 Katar\'{i}na M\'{o}zov\'{a}, Courtesy of Riichi Mahjong Slovakia.
 
 \vspace{.2in}
+\noindent
+Tile images \copyright ~FluffyStuff\footnote{\url{https://github.com/FluffyStuff/riichi-mahjong-tiles}}, licensed under Creative Commons Attribution 4.0 International License\footnote{\url{https://creativecommons.org/licenses/by/4.0/}}.
 
+\vspace{.2in}
 \noindent
 The original form of this book is \LaTeX\ source code.  Compiling this
 \LaTeX\ source has the effect of generating a device-independent
