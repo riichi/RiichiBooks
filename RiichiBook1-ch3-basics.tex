@@ -1,87 +1,109 @@
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-% Riichi Book 1, Chapter 3: Basics
+% Riichi Book 1, Rozdział 3: Podstawy
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\chapter{Riichi mahjong basics}\label{ch:basic}
+\chapter{Podstawy Riichi Mahjonga}\label{ch:basic}
 \thispagestyle{empty}
 
-\section{Learning strategies}
+\section{Strategie}
 
-Mahjong is a game of skill and luck. 
-There is a set of strategy principles you can learn to improve your skills, but acquiring skills is neither necessary nor sufficient to win a game. On the contrary, with luck, an unskilled player can easily defeat strong players in mahjong. At least in the short run, game outcomes are governed more by luck than by skills.\footnote{An interesting question would be: how short is the ``short'' run here. That is, how many games do we need in order to discern a strong player from weak players? Studies show that we would need at least 100 games or so to have a reliable estimate of our skill levels. Given that EMA tournaments usually have only 8 games, winning at these tournaments requires quite a bit of luck.\index{european@EMA}}
-However, learning strategy principles is crucial to improve your performance in the long run. Moreover, you will be able to enjoy the game in greater depth once you understand these principles. 
+Mahjong to mieszanka szczęścia i~umiejętności.
+Istnieje zbiór zasad strategicznych, które warto opanować szlifując sztukę kamieniarską.
+Samo zdobywanie umiejętności nie jest ani niezbędne, ani wystarczające, by wygrać mecz.
+Mając szczęście, mało wprawny gracz może łatwo pokonać mocniejszych przeciwników.
+Wyniki gier, przynajmniej na krótszą metę, są bardziej oparte na szczęściu niż umiejętnościach, niemniej jednak stosowanie się do reguł strategicznych jest niezbędne, aby polepszyć nasze wyniki w~dłuższej perspektywie.\footnote{Interesującym zagadnieniem jest zdefiniowanie ,,krótszej mety''. To znaczy: ile gier należy rozegrać, aby odróżnić silnych graczy od tych mniej wprawnych? Badania pokazują, że potrzeba rozegrać około 100 meczy, aby niezawodnie określić poziom naszego Mahjonga. Turnieje EMA zazwyczaj składają się tylko z ośmiu gier, więc ich wygrywanie wymaga także odrobiny szczęścia.\index{european@EMA}}
+Ponadto, rozumiejąc wspomniane zasady można czerpać większą radość z~gry.
 
 \bigskip
-Because of the probabilistic nature of the game, making the best choice does not always lead to the best outcome. The best choices are those that lead to the best outcome, \emph{on average}. An evaluation of our choices thus requires a \emph{probabilistic} (i.e., statistical) assessment of different options. For example, consider the following hand. 
+Z~powodu probabilistycznej natury Mahjonga dobre posunięcia nie zawsze dają najlepsze efekty.
+Najlepsze decyzje to takie, które \emph{statystycznie} dają najlepszy rezultat.
+Dlatego też ocena naszych decyzji wymaga rozpatrzenia wszystkich opcji pod kątem \emph{prawdopodobieństwa} (czyli \emph{statystyki}).
+Na przykład:
 \vspace{5pt}
 \begin{screen}
-\LargeHand{m44p667s123678~z666*}
-\vspace{-10pt}What would you discard? \vspace{-5pt}
+\CenteredLargeHand{m44p667s123678~z666*}
+\vspace{-10pt}Który kamień należy odrzucić? \vspace{-5pt}
 \end{screen}
 
-\bigskip
+%\bigskip
+\pagebreak
 \noindent
-This hand becomes ready to win if you discard \InlineTile{p6} or \InlineTile{p7}. Let's compare the two choices.
+Ta ręka wejdzie w \emph{tenpai} po odrzuceniu \InlineTile{p6} lub \InlineTile{p7}.
+Porównajmy obie możliwości:
 \bi\itemsep.1pt
-\i Discard \InlineTile{p6} \hspace{5pt} $\Rightarrow$ you wait for \InlineTile{p5~8} (2 kinds--8 tiles)
-\i Discard \InlineTile{p7} \hspace{5pt} $\Rightarrow$ you wait for \InlineTile{m4~p6} (2 kinds--4 tiles)
+\i Odrzut \InlineTile{p6} \hspace{5pt} $\Rightarrow$ czekamy na \InlineTile{p5~8} (2 rodzaje--8 kamieni),
+\i Odrzut \InlineTile{p7} \hspace{5pt} $\Rightarrow$ czekamy na \InlineTile{m4~p6} (2 rodzaje--4 kamienie).
 \ei
-Which discard choice is better? Although both of the two choices yield a 2-way wait, waiting for \InlineTile{p5~8} is much better than waiting for \InlineTile{m4~p6}, probabilistically speaking. With the \InlineTile{p5~8} wait, there are four tiles of \InlineTile{p5} and another four tiles of \InlineTile{p8} to win on, leaving at most eight winning tiles.\footnote{Of course, the number of winning tiles could be smaller than eight if some of them have already been discarded.}
-With the \InlineTile{m4~p6} wait, on the other hand, you have already used up two tiles of \InlineTile{m4} and two tiles of \InlineTile{p6} yourself, leaving at most four winning tiles. It is clearly better to choose the \InlineTile{p5~8} wait over the \InlineTile{m4~p6} wait, because that will give you a higher probability of winning this hand.
+Mimo, że obie opcje dają dwustronne czekanie, czekanie \InlineTile{p5~8} jest znacznie lepsze.
+Przy czekaniu \InlineTile{m4~p6}, dwie sztuki każdego kamienia są już przez nas wykorzystane.
 
 \bigskip
-It is possible that, after you decided on the {\LARGE\tong{5} \tong{8}} wait, your opponents end up not discarding {\LARGE\tong{5}} or {\LARGE\tong{8}} at all, while discarding lots of {\LARGE\wan{4} \tong{6}}. This is the kind of thing that will happen often in mahjong (or in any game of luck, for that matter). When things like this happen, do not think that you made a bad call; you didn't. You made the right choice, but you were just unlucky. When we experience this kind of bad luck, we just need to keep calm and carry on. 
+Może być tak, że po wybraniu czekania \InlineTile{p5~8} żaden kamień do wygranej nie przyjdzie, podczas gdy pojawi się kilka \InlineTile{m4} i~\InlineTile{p6}.
+Takie rzeczy się zdarzają w każdej grze z elementem losowym.
+Nie należy w takim wypadku kwestionować swojej decyzji.
+Była prawidłowa, choć zabrakło szczęścia. Lepiej zachować spokój i~grać dalej.
 
 \bigskip
-Before discussing a practical method of maximizing tile efficiency in the next chapter, I will discuss some basic principles of tile efficiency in this chapter. In doing so, I introduce several key terms we use in later chapters. I will also provide the original Japanese term for each (shown in {\jap this font}). I do so because you may find these Japanese terms used in some online strategy discussions in English.
+Zanim rozważymy praktyczne metody maksymalizowania wydajności kamieni (\emph{tile efficiency}) w~następnym rozdziale, omówimy kilka podstawowych zasad tejże wydajności.
+Wprowadzone zostaną podstawowe powszechnie używane pojęcia wraz z~ich oryginalnymi, japońskimi nazwami (napisanymi {\jap taką czcionką}).
+Ich znajomość jest o~tyle ważna, że występują w wielu internetowych dyskusjach na temat mahjongowych strategii.
 
-\section{Basic building blocks}
+\section{Podstawowe pojęcia}
 
-\subsection{Tiles}
+\subsection{Kamienie}
 
-Mahjong tiles can be classified into two categories --- number tiles and honor tiles.
+Kamienie w~Mahjongu można podzielić na dwie kategorie --- liczby oraz honory\footnote{Dla wielu terminów nie spotkałem się z~ich standardowymi polskimi tłumaczeniami --- mogą być zatem niedokładne, a także nieoczywiste dla osób trzecich. Niestety, osłuchanie się z~odpowiednikami japońskimi lub chociaż angielskimi jest ważne dla graczy nieposługujących się na co dzień tymi językami --- tłum.}.
 
-\subsubsection{Number tiles}
+\subsubsection{Liczby}
 
-
-\begin{itembox}[c]{Number tiles}
+\begin{screen}
 \centering
 \begin{tabular}{l c c}
-{Cracks (characters)} & {\jap Manzu} & {\Huge\wan{1}\wan{2}\wan{3}\wan{4}\wan{5}\wan{6}\wan{7}\wan{8}\wan{9}}\\ [\sep]
-{Dots (circles)} & {\jap Pinzu} & {\Huge \tong{1}\tong{2}\tong{3}\tong{4}\tong{5}\tong{6}\tong{7}\tong{8}\tong{9}}\\ [\sep]
-{Bamboos} & {\jap Souzu} & {\Huge\suo{1}\suo{2}\suo{3}\suo{4}\suo{5}\suo{6}\suo{7}\suo{8}\suo{9}}\\
+{Znaki} & {\jap Manzu} & \LargeHand{m123456789} \\ [\sep]
+{Żetony} & {\jap Pinzu} & \LargeHand{p123456789} \\ [\sep]
+{Bambusy} & {\jap Souzu} & \LargeHand{s123456789} \\
 \end{tabular}
-
-\end{itembox}
+\end{screen}
 
 \bigskip \noindent
-We further classify number tiles into {\bf simples} ({\jap tanyao hai}; tiles between 2 and 8) and {\bf terminals} ({\jap yaochu hai}; 1 and 9). They are differentiated because they serve different {\jap yaku} and generate different minipoints ({\jap fu}). 
+Dalej, liczby można podzielić na {\bf proste} ({\jap tanyao hai}: kamienie od 2 do 8) oraz {\bf terminale} ({\jap yaochu hai}: 1 oraz 9).
+To rozróżnienie jest istotne później, przy budowaniu układów ({\jap yaku}), a także przy liczeniu \emph{małych punktów} ({\jap fu}).
 	\index{simple tiles ({\jap tanyao hai})} \index{tanyao@{\jap tanyao hai} (simple tiles)}
 	\index{terminal tiles}
 	\index{fu@{\jap fu} (minipoint)} \index{minipoint ({\jap fu})}
 
 \bigskip
-It has become quite common to include some red five tiles. For example, most games on {\jap Tenhou} have one red five tile in each suit, {\LARGE \rfw~\rfd~\rfs}. These tiles are included in place of regular fives; we have three regular fives and one red five in each suit. Red fives are treated as {\jap dora} regardless of the {\jap dora} indicator. When a 4 in a given suit is the {\jap dora} indicator, the red five in that suit will be a double {\jap dora} tile. 
+Ponadto, w~swoich zestawach (oraz oczywiście w Mahjongu komputerowym) możecie znaleźć czerwone piątki.
+Przykładowo, jeden z~najpopularniejszych trybów na {\jap Tenhou} zawiera po jednej czerwonej piątce każdego rodzaju: \InlineTile{m0~p0~s0}.
+Czerwone piątki zastępują zwykłe podczas gry: przykładowo we wspomnianym trybie, dla każdego rodzaju kamieni liczbowych będziemy mieć trzy zwykłe piątki oraz jedną czerwoną.
+Każda czerwona piątka to {\jap dora} niezależnie od wskaźnika {\jap dora}.
+Gdy wskaźnikiem jest czwórka danego rodzaju, czerwona piątka tego rodzaju staje się podwójnym kamieniem {\jap dora}. 
 
 \vfill
-\subsubsection{Honor tiles}
+\subsubsection{Honory}
 \index{honor tiles ({\jap jihai})} \index{jihai@{\jap jihai} (honor tiles)}
 
-\begin{itembox}[c]{Honor tiles}
-\centering \footnotesize
+\begin{screen}
+\centering\scriptsize
 \begin{tabular}{l c c c c}
-Dragon tiles & {\Huge\bai} & {\Huge\fa} & {\Huge\zhong}\\
-& White ({\jap haku}) & Green ({\jap hatsu}) & Red ({\jap chun})\\ \\
-Wind tiles &{\Huge\dong} &{\Huge\nan}& {\Huge\xi}& {\Huge\bei}\\
-& East ({\jap ton}) &South ({\jap nan}) & West ({\jap sha}) &North ({\jap pei})\\
+Smoki & \LargeHand{z5} & \LargeHand{z6} & \LargeHand{z7}\\
+& Biały ({\jap haku}) & Zielony ({\jap hatsu}) & Czerwony ({\jap chun})\\ \\
+Wiatry & \LargeHand{z1} & \LargeHand{z2} & \LargeHand{z3} & \LargeHand{z4} \\
+& Wschód ({\jap ton}) & Południe ({\jap nan}) & Zachód ({\jap sha}) & Północ ({\jap pei})\\
 \end{tabular}
-\end{itembox}
+\end{screen}
 
 	\index{value tiles ({\jap fanpai; yakuhai})}
 	\index{fanpai@{\jap fanpai} ({\jap yakuhai}; value tiles)}
 	\index{yakuhai@{\jap yakuhai} ({\jap fanpai}; value tiles)}
 	\index{valueless wind@valueless wind ({\jap otakaze})}
 	\index{otakaze@{\jap otakaze} (valueless wind)}
-\noindent Some honor tiles are {\bf value tiles} ({\jap fanpai / yakuhai}); we get one {\jap han} if we collect three identical value tiles. All dragon tiles are value tiles regardless of the round and seating. On the other hand, the value status of wind tiles depends on the round and the seating. East tiles are value tiles for everyone during the East round, and South tiles are value tiles for everyone during the South round. In addition, each player gets their own seating wind as a value tile. For example, West tiles are value tiles only for the West player, but they are valueless wind tiles ({\jap otakaze}) for other players.
+\noindent
+Niektóre z honorów są {\bf wartościowe} ({\jap fanpai / yakuhai}); dostajemy jeden {\jap han} jeśli zbierzemy grupę trzech tego samego rodzaju.
+Wszystkie smoki są wartościowe niezależnie od wiatru rundy oraz gracza.
+Wartościowość wiatrów zależy od rundy oraz naszego miejsca przy stole.
+Kamienie wschodu są wartościowe dla wszystkich podczas rundy wschodu, południa --- podczas rundy południa.
+Ponadto, każdy z graczy ma swój własny wiatr zależny od miejsca przy stole oraz momentu w grze.
+Przykładowo, kamienie zachodu są wartościowe tylko dla gracza zachodu, ale są bezwartościowym wiatrem ({\jap otakaze}) dla pozostałych graczy.
 
 \vfill
 \subsection{Group ({\jap mentsu})}

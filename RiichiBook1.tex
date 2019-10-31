@@ -33,6 +33,7 @@
 \usepackage[hang,bottom]{footmisc}
 \usepackage{setspace,placeins,sectsty,appendix,makeidx,psfrag,lscape,bxascmac,verbatim,multicol}
 \setlength{\footskip}{30pt}
+\setlength{\emergencystretch}{3em}
 %Paper size: A5
 \usepackage[11pt]{extsizes}
 \usepackage[paperwidth=148mm, paperheight=210mm, top=15mm, bottom = 15mm, inner=18mm, outer = 15mm]{geometry}
@@ -40,7 +41,7 @@
 % customizing section titles
 \usepackage{titlesec}
 \partfont{\raggedright\mdseries\scshape}
-\titleformat{\chapter}[display]{\bf\LARGE}{\vspace{-50pt}Chapter \thechapter}{.1em}{}
+\titleformat{\chapter}[display]{\bf\LARGE}{\vspace{-50pt}Rozdział \thechapter}{.1em}{}
 \titlespacing{\chapter}{0pt}{10pt}{20pt}
 \titleformat{\section}[block]{\large\bfseries\filcenter}{\fbox{\thesection}}{1em}{}
 \titlespacing{\section}{0pt}{10pt}{10pt}
@@ -67,7 +68,9 @@
 \def\rfs{{\color{red!75!black} \chiwusuo}} \def\rfd{{\color{red!75!black} \chiwutong}} \def\rfw{{\color{red!75!black} \chiwuwan}}
 % Tiles.
 \newcommand{\InlineTile}[1]{\adjustbox{margin*=0ex -0.5ex 0ex 0ex}{\DrawHand{#1}{1.5em}}}
-\newcommand{\LargeHand}[1]{\center\DrawHand{#1}{2.2em}\endcenter}
+\newcommand{\CenteredLargeHand}[1]{\center\LargeHand{#1}\endcenter}
+\newcommand{\LargeHand}[1]{\DrawHand{#1}{2.2em}}
+
 % List styles
 \newcommand{\be}{\begin{enumerate}} \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bq}{\begin{quote}} \newcommand{\eq}{\end{quote}}
