@@ -106,7 +106,7 @@ Ponadto, każdy z graczy ma swój własny wiatr zależny od miejsca przy stole o
 Przykładowo, podczas rundy wschodu kamienie zachodu są wartościowe tylko dla gracza zachodu, ale są bezwartościowym wiatrem ({\jap otakaze}) dla pozostałych graczy.
 
 \vfill
-\subsection{Group ({\jap mentsu})}
+\subsection{Grupy ({\jap mentsu})}
 \index{run ({\jap shuntsu}; chow)}
 \index{chow ({\jap shuntsu}; run)}
 \index{shuntsu@{\jap shuntsu} (run; chow)}
@@ -118,84 +118,91 @@ Przykładowo, podczas rundy wschodu kamienie zachodu są wartościowe tylko dla 
 \index{kan@{\jap kan} (kong)} \index{kantsu@{\jap kantsu} (quad)}
 \index{quad@quad ({\jap kantsu})}
 
-One of the major goals in playing mahjong is to win a hand.\footnote{Another important goal is not to deal into an opponent's hand. See Chapter \ref{ch:defense} for discussions of defense strategies. However, the most important goal of all is to win a game. Winning a hand and playing defense are merely two means to this end. See Chapter \ref{ch:grand} for more discussions of this.}
-To win a standard hand, we need to complete four groups ({\jap mentsu}) and one head ({\jap atama}; final pair).\footnote{There are three exceptions to this; {\jap chiitoitsu} (Seven Pairs), {\jap kokushi musou} (Thirteen Orphans), and {\jap nagashi mangan} (All Terminals and Honors Discard) do not require four groups and one head.} 
-Groups can be classified into two kinds --- {\bf run} and {\bf set}.\footnote{EMA rules refer to run as ``chow'' and set as ``pung.'' I realize that my use of different terminology here might be confusing at first, but I hope you will get used to it soon.}
+Jednym z głównych celów Mahjonga jest wygranie ręki.\footnote{Innym ważnym celem jest nieodrzucenie kamienia, na którym wygrywa przeciwnik. Strategie defensywne będą omówione w rozdziale \ref{ch:defense}. Niemniej najważniejszym celem jest wygranie gry, a gra defensywna czy też wygranie pojedynczej ręki to jedynie środki do jego osiągnięcia. Więcej na ten temat pojawi się w rozdziale \ref{ch:grand}.}
+Standardowo, rękę wygrywa się poprzez złożenie czterech {\bf grup} ({\jap mentsu}) oraz jednej {\bf głowy} ({\jap atama}).\footnote{Istnieją trzy wyjątki od tej reguły:
+{\jap chiitoitsu} (siedem par), {\jap kokushi musou} (trzynaście sierot) oraz {\jap nagashi mangan} (odrzuty terminali i honorów).}
+Grupy można podzielić na dwa rodzaje --- {\bf sekwensy} oraz {\bf trójki}.\footnote{EMA nazywa je odpowiednio ,,chow'' oraz ,,pung''.}
 \bi
-\i Run ({\jap shuntsu}; chow / sequence) is a set of three consecutive number tiles: e.g., {\LARGE \wan{7}\wan{8}\wan{9}}, {\LARGE \suo{3}\suo{4}\suo{5}}. 
-\i Set ({\jap kotsu}; pung / triplet) is a set of three identical tiles: e.g., {\LARGE \wan{2}\wan{2}\wan{2}}, {\LARGE \fa\fa\fa}.\footnote{Technically speaking, there is a third type of groups, namely quad ({\jap kantsu}; kong), a set of four identical tiles. We treat quads as a variant of sets. See Section \ref{sec:kong} for discussions on this.} 
+\i Sekwens ({\jap shuntsu}) to trzy kolejne kamienie liczbowe, np. \InlineTile{m789}, \InlineTile{s345}.
+\i Trójka ({\jap kotsu}) to trzy identyczne kamienie np. \InlineTile{m222}, \InlineTile{z666}.\footnote{Istnieje trzeci rodzaj grup: czwórki ({\jap kantsu}; ,,kong'' w regułach EMA), czyli zbiór czterech identycznych kamieni. Traktujemy je jako wariant trójek. Więcej w sekcji \ref{sec:kong}.}
 \ei
  
 
-\subsection{Ready and $n$-away}
+\subsection{{\jap Tenpai} i {\jap $n$-shanten}}
 	\index{ready ({\jap tenpai})} \index{tenpai@{\jap tenpai} (ready)}
 	\index{1-away (1-{\jap shanten})}
 	\index{2-away (2-{\jap shanten})}
 	\index{3-away (3-{\jap shanten})}
 	\index{ukeire@{\jap ukeire} (tile acceptance)} 
 	\index{tile acceptance ({\jap ukeire})}
-We say a hand is {\bf ready} ({\jap tenpai}) when the hand can be complete with one more tile. For example, the following hand is ready. 
+Kiedy czekamy na ostatni kamień do wygranej, to mówimy, że nasza ręka jest {\jap tenpai} (\emph{gotowa}).
+Przykładowo, poniższa ręka jest {\jap tenpai}.
 \bigskip
-\begin{itembox}[r]{Ready hand}
-\bp
-\tong{3}\tong{4}\tong{5}\tong{8}\tong{8}\suo{2}\suo{3}\suo{6}\suo{7}\suo{8}\zhong\zhong\zhong
-\ep
-\end{itembox}
-This hand becomes complete with either {\LARGE\suo{1}} or {\LARGE\suo{4}}. We say that this hand waits for {\LARGE\suo{1} \suo{4}}.
+\begin{screen}
+\CenteredLargeHand{p34588s23678z777}
+\end{screen}
+Rękę uzupełni jeden z dwóch kamieni: \InlineTile{s1} lub \InlineTile{s4}. Mówimy, że ręka {\bf czeka} na \InlineTile{s1~4}.
 
 \bigskip
 
-We say a hand is {\bf 1-away from ready} (1-{\jap shanten}) when the hand can become ready with one more tile. For example, the following hand is 1-away from ready. 
+Gdy brakuje nam jednego kamienia do {\jap tenpai}, to nasza ręka jest 1-{\jap shanten}.
+Przykładowo, poniższa ręka jest 1-{\jap shanten}.
 \bigskip
-\begin{itembox}[r]{1-away hand}
-\bp
-\tong{3}\tong{5}\tong{5}\tong{8}\tong{8}\suo{2}\suo{3}\suo{6}\suo{7}\suo{8}\zhong\zhong\zhong
-\ep
-\end{itembox}
-This hand becomes ready if you draw any of {\LARGE\tong{4}\tong{5}\tong{8}\suo{1}\suo{4}}. We say this hand accepts {\LARGE\tong{4}\tong{5}\tong{8}\suo{1}\suo{4}} (5 kinds--16 tiles) as any of them can make this hand advance from 1-away to ready. {\bf Tile acceptance} ({\jap ukeire}) refers to the kinds and the number of tiles a hand can accept. Other things being equal, having a 1-away hand with greater tile acceptance is better than having one with smaller tile acceptance. 
+\begin{screen}
+\CenteredLargeHand{p35588s23678z777}
+\end{screen}
+Ręka staje się {\jap tenpai} po dobraniu któregokolwiek z \InlineTile{p458s14}.
+Mówimy, że ręka {\bf akceptuje} \InlineTile{p458s14} (5 rodzajów -- 16 kamieni), gdyż każdy z nich sprawia, że ręka staje się {\jap tenpai}.
+
+{\bf Akceptowalność} ({\jap ukeire}) to termin odnoszący się do rodzajów i liczby kamieni, które dana ręka akceptuje.
+Gdyby nie brać innych czynników pod uwagę, ręka 1-{\jap shanten} akceptująca więcej kamieni jest lepsza od innej 1-{\jap shanten} z mniejszą akceptowalnością.
 
 \bigskip
-More generally, we say a hand is $n$-away from ready ($n$-{\jap shanten}) when the hand can be ready with $n$ more steps. For example, the following hand is 2-away from ready. 
+Bardziej ogólnie, ręka jest $n$-{\jap shanten}, gdy da się ją zrobić {\jap tenpai} po $n$ krokach.
+Poniższa ręka jest 2-{\jap shanten}:
 \bigskip
-\begin{itembox}[r]{2-away hand}
-\bp
-\tong{3}\tong{5}\tong{5}\tong{8}\tong{8}\suo{2}\suo{3}\suo{6}\suo{7}\suo{7}\zhong\zhong\zhong
-\ep
-\end{itembox} \vspace{5pt}
+\begin{screen}
+\CenteredLargeHand{p35588s23677z777}
+\end{screen}
+\vspace{5pt}
 \noindent
-This hand accepts all the tiles that the 1-away hand above accepts ({\LARGE\tong{4}\tong{5}\tong{8}\suo{1}\suo{4}}), plus seven additional kinds of tiles {\LARGE\tong{3}\suo{2}\suo{3}\suo{5}\suo{6}\suo{7}\suo{8}}.\footnote{\tong{3}\suo{2}\suo{3}\suo{6} will make this hand 1-away for {\jap chiitoitsu} (Seven Pairs).} 
-The hand will become 1-away if any of these tiles gets drawn. 
+Ta ręka akceptuje te kamienie, które akceptowała ręka 1-{\jap shanten} powyżej (\InlineTile{p458s14}) wraz z dodatkowymi kamieniami \InlineTile{p3s235678}.\footnote{Dobranie \InlineTile{p3s236} powoduje, że jesteśmy 1-{\jap shanten} do {\jap chiitoitsu}.}
+Dobranie któregokolwiek z tych kamieni powoduje, że stajemy się 1-{\jap shanten}.
 
 \bigskip
-A hand can also be 3-away, 4-away, 5-away, or 6-away from ready.\footnote{6-away happens when a hand has no pair, in which case it takes 6 more tiles to make it ready for {\jap chiitoitsu}.}  
-In practice, however, there is not much point in distinguishing 3-away hands from 4-away (or worse) hands. You thus need to be able to distinguish between four kinds of hands --- ready hands, 1-away hands, 2-away hands, and 3-away or worse hands. 
+Ręka może być też 3-{\jap shanten}, 4-{\jap shanten}, 5-{\jap shanten} lub 6-{\jap shanten}.\footnote{6-{\jap shanten} jest wtedy, gdy w ręce nie ma żadnej pary --- wtedy potrzeba dobrać 6 kamieni, aby być {\jap tenpai} do {\jap chiitoitsu}.}
+Jednakże w praktyce nie warto rozróżniać rąk 3-{\jap shanten} od 4-{\jap shanten} lub gorszych.
+W związku z tym gracz powinien umieć rozróżniać cztery rodzaje rąk: {\jap tenpai}, 1-{\jap shanten}, 2-{\jap shanten} oraz pozostałe.
 
-\subsubsection{Tile acceptance shrinkage} 
-As $n$ gets smaller and the hand gets closer to completion, the kinds and the number of tiles it can accept will necessarily get smaller. Consider the three stages of a hand we have seen above.
+\subsubsection{Zmniejszanie akceptowalności}
+Gdy $n$ maleje, a ręka jest coraz bliżej ułożenia, rodzaje oraz liczba akceptowanych kamieni będzie maleć.
+Rozważmy to, jak postępuje rozwój ręki opisanej wyżej.
 \bi
-\i When 2-away, it accepts: {\LARGE\tong{3}\tong{4}\tong{5}\tong{8}\suo{1}\suo{2}\suo{3}\suo{4}\suo{5}\suo{6}\suo{7}\suo{8}}.
-\i When 1-away, it accepts: {\LARGE\tong{4}\tong{5}\tong{8}\suo{1}\suo{4}}.
-\i When ready, it waits for: {\LARGE\suo{1}\suo{4}}.
+\i W 2-{\jap shanten}, akceptuje \InlineTile{p3458s12345678},
+\i W 1-{\jap shanten}, akceptuje \InlineTile{p458s14},
+\i W {\jap tenpai}, czeka na \InlineTile{s14}.
 \ei
-Tile acceptance is minimized when the hand is ready. Note also that it is \emph{virtually} minimized when it is 1-away. This is because with a ready hand you can utilize not only the tiles you draw but also the tiles discarded by others to complete the hand. With $n$-away hands, however, you have to rely (almost) solely on the tiles you draw yourself to advance your hand.\footnote{Melding (calling {\jap pon} / {\jap chii}) is not always possible. For example, the 2-away hand above can accept \suo{3} if you draw one, but you can neither {\jap pon} nor {\jap chii} \suo{3}.} 
-Therefore, in choosing a discard from a 2-away hand, we should try not to make for a 1-away hand with too small tile acceptance.
+Akceptowalność jest najmniejsza, gdy ręka jest {\jap tenpai}.
+Zauważmy, że jest ona także \emph{efektywnie} minimalna w 1-{\jap shanten}.
+Wynika to stąd, że ręka {\jap tenpai} pozwala na wykorzystanie nie tylko kamieni dobranych, ale także odrzuconych przez innych.
+Ręce $n$-{\jap shanten} muszą przy rozwoju polegać prawie wyłącznie na kamieniach, które samo dobieramy.\footnote{Meldunki ({\jap pon} / {\jap chii} / {\jap kan}) nie zawsze są możliwe. Przykładowo, podana wyżej ręka 2-{\jap shanten} akceptuje \InlineTile{s3} po dobraniu, ale nie można go zameldować ani {\jap pon}, ani {\jap chii}.}
+A zatem, wybierając kamień do odrzucenia będąc 2-{\jap shanten}, powinniśmy starać się unikać wylądowania z ręką 1-{\jap shanten} z małą akceptowalnością.
 
-\subsubsection{Advancing your hand}
+\subsubsection{Rozwijanie ręki}
 
-To win a hand, we need to advance our hand by reducing the $n$ of an $n$-away hand until it is ready.
-When a hand is 2-away, we should aim to make the hand 1-away. 
-When a hand is 1-away, we should aim to make the hand ready. 
-For example, consider the following hand. 
-\begin{itembox}[r]{2-away vs. 1-away}
-\bp
-\wan{5}\wan{6}\wan{7}\wan{7}\tong{3}\tong{4}\suo{4}\suo{5}\suo{5}\suo{7}\suo{9}\fa\fa\fa
-\ep
-\vspace{-10pt}What would you discard? \vspace{-5pt}
-\end{itembox}
+Aby wygrać rozdanie, potrzebujemy rozwijać naszą rękę redukując $n$ przy naszej $n$-{\jap shanten} ręce, dopóki nie będziemy {\jap tenpai}.
+Kiedy ręka jest 2-{\jap shanten}, powinniśmy starać się zrobić z niej 1-{\jap shanten}.
+Kiedy ręka jest 1-{\jap shanten}, powinniśmy starać się zrobić z niej {\jap tenpai}.
+Przykładowo, rozważmy następującą sytuację:
+\begin{screen}
+\CenteredLargeHand{m5677p34s45579z666}
+\vspace{-10pt}Co należy odrzucić? \vspace{-5pt}
+\end{screen}
 \noindent
-Discarding {\LARGE\suo{9}} makes the hand 2-away, whereas discarding either {\LARGE\wan{7}} or {\LARGE\suo{4}} makes the hand 1-away. You should thus discard {\LARGE\wan{7}} or {\LARGE\suo{4}} to make the hand 1-away. 
-Reverting a 1-away hand to 2-away makes sense only in some exceptional cases where tile acceptance at 1-away becomes unbearably small (i.e., fewer than 2 kinds).
-With this hand, the hand will be able to accept {\LARGE\tong{2}\tong{5}\suo{8}} (3 kinds--12 tiles) when it becomes 1-away.
+Odrzucenie \InlineTile{s9} sprawia, że ręka staje się 2-{\jap shanten}, a odrzucenie \InlineTile{m7} lub \InlineTile{s4} sprawia, że ręka staje się 1-{\jap shanten}.
+Należy zatem odrzucić \InlineTile{m7} lub \InlineTile{s4}.
+Wycofanie się z ręki 1-{\jap shanten} do 2-{\jap shanten} ma sens tylko w wyjątkowych sytuacjach, gdy akceptacja w 1-{\jap shanten} staje się bardzo mała (mniej niż 2 rodzaje kamieni).
+Powyższa ręka będzie akceptować \InlineTile{p25s8} (3 rodzaje -- 12 kamieni) w 1-{\jap shanten}.
 
 \subsection{Protoruns ({\jap taatsu})} \label{sec:protorun}
 	\index{protorun ({\jap taatsu})} \index{taatsu@{\jap taatsu} (protorun)}
