@@ -30,8 +30,8 @@ Na przykład:
 Ta ręka wejdzie w \emph{tenpai} po odrzuceniu \InlineTile{p6} lub \InlineTile{p7}.
 Porównajmy obie możliwości:
 \bi\itemsep.1pt
-\i Odrzut \InlineTile{p6} \hspace{1pt} $\Rightarrow$ czekamy na \InlineTile{p5~8} (2 rodzaje--8 kamieni),
-\i Odrzut \InlineTile{p7} \hspace{1pt} $\Rightarrow$ czekamy na \InlineTile{m4~p6} (2 rodzaje--4 kamienie).
+\i Odrzut \InlineTile{p6} \hspace{1pt} $\Rightarrow$ czekamy na \InlineTile{p5~8} (2 rodzaje -- 8 kamieni),
+\i Odrzut \InlineTile{p7} \hspace{1pt} $\Rightarrow$ czekamy na \InlineTile{m4~p6} (2 rodzaje -- 4 kamienie).
 \ei
 Mimo, że obie opcje dają dwustronne czekanie, czekanie \InlineTile{p5~8} jest znacznie lepsze.
 Przy czekaniu \InlineTile{m4~p6}, dwie sztuki każdego kamienia są już przez nas wykorzystane.
@@ -74,7 +74,7 @@ To rozróżnienie jest istotne później, przy budowaniu układów ({\jap yaku})
 \bigskip
 Ponadto, w~swoich zestawach (oraz oczywiście w Mahjongu komputerowym) możecie znaleźć czerwone piątki.
 Przykładowo, jeden z~najpopularniejszych trybów na {\jap Tenhou} zawiera po jednej czerwonej piątce każdego rodzaju: \InlineTile{m0~p0~s0}.
-Czerwone piątki zastępują zwykłe podczas gry: przykładowo we wspomnianym trybie, dla każdego rodzaju kamieni liczbowych będziemy mieć trzy zwykłe piątki oraz jedną czerwoną.
+Czerwone piątki zastępują zwykłe podczas gry: przykładowo, we wspomnianym trybie dla każdego rodzaju kamieni liczbowych będziemy mieć trzy zwykłe piątki oraz jedną czerwoną.
 Każda czerwona piątka to {\jap dora} niezależnie od wskaźnika {\jap dora}.
 Gdy wskaźnikiem jest czwórka danego rodzaju, czerwona piątka tego rodzaju staje się podwójnym kamieniem {\jap dora}. 
 
@@ -102,7 +102,7 @@ Niektóre z honorów są {\bf wartościowe} ({\jap fanpai / yakuhai}): dostajemy
 Wszystkie smoki są wartościowe niezależnie od wiatru rundy oraz gracza.
 Wartościowość wiatrów zależy od rundy oraz naszego miejsca przy stole.
 Kamienie wschodu są wartościowe dla wszystkich podczas rundy wschodu, południa --- podczas rundy południa.
-Ponadto, każdy z graczy ma swój własny wiatr zależny od miejsca przy stole oraz momentu w grze.
+Ponadto każdy z graczy ma swój własny wiatr zależny od miejsca przy stole oraz numeru rozdania.
 Przykładowo, podczas rundy wschodu kamienie zachodu są wartościowe tylko dla gracza zachodu, ale są bezwartościowym wiatrem ({\jap otakaze}) dla pozostałych graczy.
 
 \vfill
@@ -119,12 +119,12 @@ Przykładowo, podczas rundy wschodu kamienie zachodu są wartościowe tylko dla 
 \index{quad@quad ({\jap kantsu})}
 
 Jednym z głównych celów Mahjonga jest wygranie ręki.\footnote{Innym ważnym celem jest nieodrzucenie kamienia, na którym wygrywa przeciwnik. Strategie defensywne będą omówione w rozdziale \ref{ch:defense}. Niemniej najważniejszym celem jest wygranie gry, a gra defensywna czy też wygranie pojedynczej ręki to jedynie środki do jego osiągnięcia. Więcej na ten temat pojawi się w rozdziale \ref{ch:grand}.}
-Standardowo, rękę wygrywa się poprzez złożenie czterech {\bf grup} ({\jap mentsu}) oraz jednej {\bf głowy} ({\jap atama}).\footnote{Istnieją trzy wyjątki od tej reguły:
+Standardowo rękę wygrywa się poprzez złożenie czterech {\bf grup} ({\jap mentsu}) oraz jednej {\bf głowy} ({\jap atama}).\footnote{Istnieją trzy wyjątki od tej reguły:
 {\jap chiitoitsu} (siedem par), {\jap kokushi musou} (trzynaście sierot) oraz {\jap nagashi mangan} (odrzuty terminali i honorów).}
 Grupy można podzielić na dwa rodzaje --- {\bf sekwensy} oraz {\bf trójki}.\footnote{EMA nazywa je odpowiednio ,,chow'' oraz ,,pung''.}
 \bi
 \i Sekwens ({\jap shuntsu}) to trzy kolejne kamienie liczbowe, np. \InlineTile{m789}, \InlineTile{s345}.
-\i Trójka ({\jap kotsu}) to trzy identyczne kamienie np. \InlineTile{m222}, \InlineTile{z666}.\footnote{Istnieje trzeci rodzaj grup: czwórki ({\jap kantsu}; ,,kong'' w regułach EMA), czyli zbiór czterech identycznych kamieni. Traktujemy je jako wariant trójek. Więcej w sekcji \ref{sec:kong}.}
+\i Trójka ({\jap kotsu}) to trzy identyczne kamienie np. \InlineTile{m222} czy też \InlineTile{z666}.\footnote{Istnieje trzeci rodzaj grup: czwórki ({\jap kantsu}; ,,kong'' w regułach EMA), czyli zbiór czterech identycznych kamieni. Traktujemy je jako wariant trójek. Więcej w sekcji \ref{sec:kong}.}
 \ei
  
 
@@ -166,8 +166,8 @@ Poniższa ręka jest 2-{\jap shanten}:
 \end{screen}
 \vspace{5pt}
 \noindent
-Ta ręka akceptuje te kamienie, które akceptowała ręka 1-{\jap shanten} powyżej (\InlineTile{p458s14}) wraz z dodatkowymi kamieniami \InlineTile{p3s235678}.\footnote{Dobranie \InlineTile{p3s236} powoduje, że jesteśmy 1-{\jap shanten} do {\jap chiitoitsu}.}
-Dobranie któregokolwiek z tych kamieni powoduje, że stajemy się 1-{\jap shanten}.
+Ta ręka akceptuje te same kamienie, które akceptowała ręka 1-{\jap shanten} powyżej (\InlineTile{p458s14}) wraz z dodatkowymi kamieniami \InlineTile{p3s235678}.\footnote{Dobranie \InlineTile{p3s236} powoduje, że jesteśmy 1-{\jap shanten} do {\jap chiitoitsu}.}
+Dobranie któregokolwiek z tych kamieni powoduje, że ręka staje się 1-{\jap shanten}.
 
 \bigskip
 Ręka może być też 3-{\jap shanten}, 4-{\jap shanten}, 5-{\jap shanten} lub 6-{\jap shanten}.\footnote{6-{\jap shanten} jest wtedy, gdy w ręce nie ma żadnej pary --- wtedy potrzeba dobrać 6 kamieni, aby być {\jap tenpai} do {\jap chiitoitsu}.}
@@ -186,7 +186,7 @@ Akceptowalność jest najmniejsza, gdy ręka jest {\jap tenpai}.
 Zauważmy, że jest ona także \emph{efektywnie} minimalna w 1-{\jap shanten}.
 Wynika to stąd, że ręka {\jap tenpai} pozwala na wykorzystanie nie tylko kamieni dobranych, ale także odrzuconych przez innych.
 Ręce $n$-{\jap shanten} muszą przy rozwoju polegać prawie wyłącznie na kamieniach, które samo dobieramy.\footnote{Meldunki ({\jap pon} / {\jap chii} / {\jap kan}) nie zawsze są możliwe. Przykładowo, podana wyżej ręka 2-{\jap shanten} akceptuje \InlineTile{s3} po dobraniu, ale nie można go zameldować ani {\jap pon}, ani {\jap chii}.}
-A zatem, wybierając kamień do odrzucenia będąc 2-{\jap shanten}, powinniśmy starać się unikać wylądowania z ręką 1-{\jap shanten} z małą akceptowalnością.
+A zatem, wybierając kamień do odrzucenia będąc 2-{\jap shanten}, powinniśmy starać się unikać wylądowania z ręką 1-{\jap shanten} i małą akceptowalnością.
 
 \subsubsection{Rozwijanie ręki}
 
