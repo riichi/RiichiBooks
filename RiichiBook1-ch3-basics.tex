@@ -204,87 +204,99 @@ Należy zatem odrzucić \InlineTile{m7} lub \InlineTile{s4}.
 Wycofanie się z ręki 1-{\jap shanten} do 2-{\jap shanten} ma sens tylko w wyjątkowych sytuacjach, gdy akceptacja w 1-{\jap shanten} staje się bardzo mała (mniej niż 2 rodzaje kamieni).
 Powyższa ręka będzie akceptować \InlineTile{p25s8} (3 rodzaje -- 12 kamieni) w 1-{\jap shanten}.
 
-\subsection{Protoruns ({\jap taatsu})} \label{sec:protorun}
+\subsection{Niekompletne sekwensy ({\jap taatsu})} \label{sec:protorun}
 	\index{protorun ({\jap taatsu})} \index{taatsu@{\jap taatsu} (protorun)}
 	\index{waits!side wait} \index{waits!closed wait} \index{waits!edge wait}
 
-Of the two kinds of groups, it is easier to complete a run than to complete a set. There are only four identical tiles, and completing a set requires that you collect three out of the four identical tiles. 
-Therefore, we usually prioritize runs over sets in advancing a hand. 
+Łatwiej jest skompletować sekwens niż trójkę. Każdy kamień występuje w czterech egzemplarzach, a do uzbierania trójki potrzebujemy aż trzech z nich.
+Dlatego też zwykle będziemy skupiać się na składaniu sekwensów.
 
 \bigskip
-A pair of tiles that can become a run with one more tile is called a {\bf protorun} ({\jap taatsu}). There are three types of protoruns, summarized in Table \ref{tbl:proto}. 
+Parę kamieni, które można uzupełnić do sekwensu ({\bf niekompletny sekwens}) nazywamy {\jap taatsu}.
+Mamy trzy rodzaje {\jap taatsu}:
 \bigskip
 
 {\begin{table}[h!]\centering \small \captionsetup{font=footnotesize}
-\caption{Types of protoruns} \label{tbl:proto}
+\caption{Typy {\jap taatsu}} \label{tbl:proto}
 \begin{tabular}{l l c c l} 
 \toprule
-Name & Japanese & Example & Wait & Acceptance\\ 
+Nazwa & Nazwa jap. & Przykład & Czekanie & {\jap Ukeire}\\ 
 \midrule 
-side wait & {\jap ryanmen} & {\LARGE \wan{3}\wan{4}} & {\LARGE \wan{2}-\wan{5}} & 2 kinds--8 tiles\\ [\sep]
-closed wait & {\jap kanchan} & {\LARGE \tong{2}\tong{4}} & {\LARGE \tong{3}} & 1 kind--4 tiles\\ [\sep]
-edge wait & {\jap penchan} & {\LARGE \suo{8}\suo{9}} & {\LARGE \suo{7}} & 1 kind--4 tiles\\ [\sep]
+dwustronne & {\jap ryanmen} & {\LargeHand{s34}} & {\LargeHand{s25}} & 2 rodzaje -- 8 kamieni\\ [\sep]
+środkowe & {\jap kanchan} & {\LargeHand{p24}} & {\LargeHand{p3}} & 1 rodzaj -- 4 kamienie\\ [\sep]
+skrajne & {\jap penchan} & {\LargeHand{s89}} & {\LargeHand{s7}} & 1 rodzaj -- 4 kamienie\\ [\sep]
 \bottomrule
 \end{tabular}
 \end{table}}
 
-As we can see in the table, a {\bf side-wait} ({\jap ryanmen}) protorun can accept twice as many tiles as a {\bf closed-wait} ({\jap kanchan}) protorun or an {\bf edge-wait} ({\jap penchan}) protorun can. Therefore, building side-wait protoruns is the key to advancing a hand. Winning tiles of side-wait protoruns are often denoted with a hyphen in the middle, such as {\LARGE \suo{1}-\suo{4}} or {\LARGE \tong{5}-\tong{8}}.\footnote{Note that \suo{1}-\suo{4} wait means the winning tiles are \suo{1} and \suo{4}, not \suo{1} through \suo{4}.}
+Jak widać powyżej, {\jap ryanmen} czeka na dwa razy więcej kamieni niż pozostałe {\jap taatsu}.
+Jest on więc kluczem do posunięcia ręki naprzód.
 
 \bigskip
-\subsubsection*{Closed wait vs. edge wait}
-There is no difference in the kinds and the number of tiles accepted by closed-wait and edge-wait protoruns; they both accept 1 kind--4 tiles. However, closed-wait protoruns are superior to edge-wait ones because they can more easily evolve into a side-wait protorun. 
+\subsubsection*{Czekanie środkowe a skrajne}
+Środkowe i skrajne czekanie nie różni się pod względem {\jap ukeire} --- przy obu czekamy na 1 rodzaj, 4 kamienie.
+Środkowe czekanie ma jednak przewagę, ponieważ możemy ulepszyć je do dwustronnego.
 
 \bigskip
-A closed-wait protorun can evolve into a side-wait protorun in just one step. For example, a protorun {\LARGE\tong{1}\tong{3}} can become a side-wait one if you draw {\LARGE\tong{4}} and discard {\LARGE\tong{1}}. 
+Ulepszenie odbywa się w jednym kroku.
+Przykładowo możemy, mając {\jap kanchan} \InlineTile{p13} i dobierając \InlineTile{p4}, zamienić je na na {\jap ryanmen} \InlineTile{p34} odrzucając \InlineTile{p1}.
 \begin{center}
-{\LARGE \tong{1}\tong{3} ~~$\Rightarrow$~~ \tong{3}\tong{4}}\\
-draw {\Large\tong{4}}
+{\VCLargeHand{p13} ~~$\Rightarrow$~~ \VCLargeHand{p34}}\\
++ \VCInlineTile{p4}
 \end{center}
-On the other hand, it requires two steps for an edge-wait protorun to evolve into a side-wait protorun. For example, a protorun {\LARGE\tong{8}\tong{9}} can become a side-wait one if you draw {\LARGE\tong{6}} first and then {\LARGE\tong{5}}. 
+Z drugiej strony skrajne czekanie potrzebuje aż dwóch kamieni, aby zamienić się na dwustronne: \InlineTile{p89} zamieni się w {\jap ryanmen} po dobraniu najpierw \InlineTile{p6}, a następnie \InlineTile{p5}.
 \begin{center}
-{\LARGE \tong{8}\tong{9} ~~$\Rightarrow$~~ \tong{6}\tong{8} ~~ $\Rightarrow$ ~~ 
-\tong{5}\tong{6}}\\
-draw {\Large\tong{6}} ~~~~~~~~~~~~ draw {\Large\tong{5}}
+{\VCLargeHand{p89} ~~ $\Rightarrow$ ~~ \VCLargeHand{p68} ~~ $\Rightarrow$ ~~ \VCLargeHand{p56}}\\
++ \VCInlineTile{p6} ~~~~~~~~~~~~~~~ + \VCInlineTile{p5}
 \end{center}
 
 \bigskip
 
 \color{MyRed}
-\begin{itembox}[c]{Value ranking of protoruns}
+\begin{itembox}[c]{Ranking {\jap taatsu}}
 \normalcolor
 \centering
-side wait > closed wait > edge wait
+czekanie dwustronne > czekanie środkowe > czekanie skrajne
 \end{itembox}
 \normalcolor
 
 \bigskip
 
-\subsubsection{Tile versatility} \label{sec:versatility}
+\subsubsection{Przydatność kamieni} \label{sec:versatility}
 
-Some tiles are more versatile than others. 
-For example, number tiles are more versatile than honor tiles because honor tiles can never form a run. Moreover, we can rank order the versatility of number tiles based on the types of protoruns they can form.
-
-\bigskip
-Number tiles between 3 and 7 are the most versatile. This is because each of them can form a protorun with four kinds of number tiles. For example, {\LARGE\tong{3}} can form a protorun with {\LARGE\tong{1}}, {\LARGE\tong{2}}, {\LARGE\tong{4}}, and {\LARGE\tong{5}}. Two out of the four resulting protoruns will be side wait.
+Niektóre kamienie się bardziej użyteczne od innych.
+Kamienie numeryczne są najbardziej przydatne, gdyż kamienie specjalne nie mogą tworzyć sekwensów.
+Ponadto, możemy określać przydatność kamieni w oparciu o rodzaje {\jap taatsu}, które mogą stworzyć.
 
 \bigskip
-2 and 8 are less versatile. They can form a protorun with only three kinds of number tiles. For example, {\LARGE\tong{2}} can form a protorun with {\LARGE\tong{1}}, {\LARGE\tong{3}}, and {\LARGE\tong{4}}. Only one out of the three resulting protoruns is side wait. 
+Kamienie między 3 a 7 są najbardziej przydatne.
+Wynika to z faktu, że każdy z nich tworzy {\jap taatsu} z czterema rodzajami kamieni.
+Przykładowo, \InlineTile{p3} tworzy niekompletny sekwens z \InlineTile{p1}, \InlineTile{p2}, \InlineTile{p4} i \InlineTile{p5}.
+Ponadto w dwóch przypadkach dostajemy {\jap ryanmen}.
 
 \bigskip
-Terminals (1 and 9) are the least versatile. They can form a protorun with only two kinds of tiles. For example, {\LARGE\tong{1}} can form a protorun only with {\LARGE\tong{2}} and {\LARGE\tong{3}}. Neither of the two resulting protoruns is side wait. 
+2 i 8 są troszkę mniej elastyczne --- ,,parują się'' z trzema rodzajami kamieni.
+Na przykład, \InlineTile{p2} tworzy {\jap taatsu} z \InlineTile{p1}, \InlineTile{p3} oraz \InlineTile{p4}.
+Tylko jedna z trzech opcji kończy się dwustronnym czekaniem.
+
+\bigskip
+Terminale (1 i 9) są najmniej przydatne --- tworzą {\jap taatsu} z tylko 2 rodzajami kamieni. Na przykład \InlineTile{p1} da {\jap taatsu} tylko z \InlineTile{p2} oraz \InlineTile{p3}.
+Żadna z tych opcji nie kończy się {\jap ryanmen}em.
 
 \color{MyRed}
-\begin{itembox}[c]{Versatility ranking of tiles}
+\begin{itembox}[c]{Ranking przydatności kamieni}
 \centering\normalcolor
-3--7 tiles > 2, 8 tiles > 1, 9 tiles > honor tiles
+liczbowe 3--7 > liczbowe 2, 8 > liczbowe 1, 9 > honory
 \end{itembox}
 \normalcolor
-\bigskip
-Applying the same logic, we can also rank order the versatility of closed-wait protoruns. 
-For example, a closed-wait protorun {\LARGE\tong{1}\tong{3}} can become a side-wait one only if we draw {\LARGE\tong{4}}. Likewise, a closed-wait protorun {\LARGE\tong{2}\tong{4}} can become a side-wait one only if we draw {\LARGE\tong{5}}. However, a closed-wait protorun {\LARGE\tong{3}\tong{5}} can become a side-wait one if we draw {\LARGE\tong{2}} or {\LARGE\tong{6}}. Clearly, {\LARGE\tong{3}\tong{5}} is more versatile than {\LARGE\tong{1}\tong{3}} or {\LARGE\tong{2}\tong{4}}. 
+
+Idąc tym tokiem rozumowania możemy też sklasyfikować przydatność {\jap kanchan}ów.
+Przykładowo, {\jap kanchan} \InlineTile{p13} stworzy {\jap ryanmen} tylko z \InlineTile{p4}, podobnie jak \InlineTile{p24} stworzy {\jap ryanmen} tylko z \InlineTile{p5}.
+Za to {\jap kanchan} \InlineTile{p35} zmieni się w {\jap ryanmen} po dobraniu któregokolwiek z kamieni \InlineTile{p2} lub \InlineTile{p6}.
+Wyraźnie tutaj widać, że niekompletna grupka \InlineTile{p35} jest bardziej elastyczna od \InlineTile{p13} lub \InlineTile{p24}.
 
 \color{MyRed}
-\begin{itembox}[c]{Versatility ranking of closed-wait protoruns}
+\begin{itembox}[c]{Ranking elastyczności {\jap kanchan}ów}
 \centering\normalcolor
 35, 46, 57 > 13, 24, 68, 79
 \end{itembox} 
