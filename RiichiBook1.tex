@@ -71,8 +71,13 @@
 \def\rfs{{\color{red!75!black} \chiwusuo}} \def\rfd{{\color{red!75!black} \chiwutong}} \def\rfw{{\color{red!75!black} \chiwuwan}}
 % Tiles.
 \newcommand{\InlineTile}[1]{\adjustbox{margin*=0ex -0.5ex 0ex 0ex}{\DrawHand{#1}{1.5em}}}
+% More or less vertically centered inline tile.
+\newcommand{\VCInlineTile}[1]{\adjustbox{margin*=0ex -1ex 0ex 0ex}{\DrawHand{#1}{1.5em}}}
 \newcommand{\CenteredLargeHand}[1]{\center\LargeHand{#1}\endcenter}
 \newcommand{\LargeHand}[1]{\DrawHand{#1}{2.2em}}
+% Same as above.
+\newcommand{\VCLargeHand}[1]{\adjustbox{margin*=0em -0.8em 0em 0em}{\DrawHand{#1}{2.2em}}}
+
 
 % List styles
 \newcommand{\be}{\begin{enumerate}} \newcommand{\ee}{\end{enumerate}}
