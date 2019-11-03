@@ -18,6 +18,7 @@
 \usepackage[abs]{overpic}
 \usepackage[dvipdfmx]{pict2e}
 \usepackage{adjustbox}
+\usepackage[polish]{babel}
 \usepackage[dvipdfmx,colorlinks=true, urlcolor={blue!50!blue}, citecolor={blue!50!blue}, linkcolor={MyBlue}]{hyperref}
 
 % To remove page numbers from TOC
@@ -52,6 +53,8 @@
 % Table & figure
 \usepackage{tabularx, tabulary, booktabs, dcolumn, threeparttable, longtable, multirow,colortbl,wallpaper,floatflt,caption}
 %\usepackage{float} \floatstyle{plaintop} \restylefloat{table}
+% Tablica -> Tabela
+\AtBeginDocument{\renewcommand{\tablename}{Tabela}}
 % Define Colors
 \definecolor{MyBlue}{RGB}{5,113,176} \definecolor{MyRed}{RGB}{202,0,32}
 \definecolor{MyGreen}{RGB}{77,175,74}
