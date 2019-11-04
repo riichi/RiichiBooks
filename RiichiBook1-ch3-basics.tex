@@ -303,112 +303,116 @@ Wyraźnie tutaj widać, że niekompletna grupka \InlineTile{p35} jest bardziej e
 \normalcolor
 \bigskip
 
-\subsection{Pairs ({\jap toitsu})}\label{sec:closevers}
+\subsection{Pary ({\jap toitsu})}\label{sec:closevers}
 \index{pair ({\jap toitsu})} \index{toitsu@{\jap toitsu} (pair)}
 
-A set of two identical tiles is called a {\bf pair} ({\jap toitsu}). 
-Pairs can perform several different roles. A pair can be the head (final pair) of a hand, a protoset (a candidate for a set), or a component of {\jap chiitoitsu} (Seven Pairs). 
+Zbiór dwóch identycznych kamieni nazywamy {\bf parą} ({\jap toitsu}).
+Pełnią one kilka ról: para może być końcową parą w układzie, kandydatem do trójki lub składnikiem siedmiu par ({\jap Chiitoitsu}).
 
 \bigskip
-\subsubsection{Building the head}
-Any hand --- including Thirteen Orphans and Seven Pairs --- requires the head to be complete. Since building the head is much easier than building a group, we usually don't worry too much about the head. For example, consider the following hand. 
+\subsubsection{Składanie par}
+Każdy układ --- włącznie z {\jap Kokushi Musou} i {\jap Chiitoitsu} --- musi mieć parę.
+Złożenie pary jest bardzo proste, więc zwykle nie przejmujemy się nią zbytnio.
+Na przykład:
 \bigskip
-\begin{itembox}[r]{Hand with no head}
-\bp
-\wan{7}\wan{8}\wan{9}\tong{2}\tong{3}\tong{4}\tong{5}\tong{6}\tong{7}\suo{3}\suo{4}\suo{5}\suo{7}
-\ep
-\end{itembox}
-This hand currently lacks the head and the wait is not very good. The hand is complete only with {\LARGE\suo{7}} (1 kind--3 tiles).
-However, if we draw any of {\LARGE\wan{6}\wan{9}\tong{1}\tong{2}\tong{4}\tong{5}\tong{7}\tong{8}\suo{2}\suo{3}\suo{5}\suo{6}} (12 kinds--41 tiles), the wait will be significantly improved. 
-For example, if we draw {\LARGE\tong{5}} and discard {\LARGE\suo{7}}, the hand becomes:
-\bp
-\wan{7}\wan{8}\wan{9}\tong{2}\tong{3}\tong{4}\tong{5}\tong{5}\tong{6}\tong{7}\suo{3}\suo{4}\suo{5}
-\ep
-This hand is now waiting for {\LARGE\tong{2} \tong{5}-\tong{8}} (3 kinds--9 tiles). 
-When a hand is missing the head, it is often the case that the wait gets significantly improved quite easily. 
+\begin{screen}
+\CenteredLargeHand{m789p234567s3457}
+\end{screen}
+Ta ręka nie ma pary, a czekanie nie jest zbyt dobre.
+Układ uzupełnia jedynie \InlineTile{s7} (3 kamienie).
+Jeśli dostaniemy któryś z \InlineTile{m69p124578s2356} (12 rodzajów -- 41 kamieni), czekanie znacznie się poprawi.
+Przykładowo, po dobraniu \InlineTile{p5} ręka będzie wyglądała tak:
+{\CenteredLargeHand{m789p2345567s345}}
+\noindent Czekamy na \InlineTile{p258} (3 rodzaje -- 9 kamieni).
+Gdy ręka nie ma pary, czekanie można zwykle łatwo ulepszyć.
 
-\subsection{Pairs and sets} \label{sec:2pairs}
-Another important role a pair can play is to work as a candidate for a set. 
-Especially when a hand has two pairs, we can count on one of the two pairs to become the head while the other becomes a set. In other words, the value of pairs is maximized when there are two (and only two) pairs in a hand. Let's see why this is the case by comparing hands with one, two, and three pairs. 
+\subsection{Pary i grupy} \label{sec:2pairs}
+Kolejną ważną rolą par jest możliwość ich zamiany w grupkę.
+Gdy mamy na ręce więcej niż jedną parę, możemy liczyć na pozyskanie grupki z jednej z nich, podczas gdy druga pozostanie naszą parą.
+Innymi słowy, pary są najbardziej przydatne, gdy mamy dwie (nie więcej).
+Aby lepiej to zobrazować, popatrzmy na poniższe przykłady rąk z jedną, dwiema i trzema parami.
 
 %\newpage
-\begin{itembox}[r]{1. Hand with one pair}
-\bp
-\wan{1}\wan{3}\wan{5}\tong{5}\tong{6}\tong{7}\tong{8}\tong{9}\suo{2}\suo{2}\suo{6}\suo{7}\bei
-\ep
-\end{itembox}
+\begin{screen}
+\CenteredLargeHand{m135p56789s2267z4}
+\end{screen}
 \noindent
-This 2-away hand has one pair: {\LARGE\suo{2}\suo{2}}. This pair is not very useful as a candidate for a set for two reasons. First, if we draw another {\LARGE\suo{2}}, we will complete a set but then we will lose the head at the same time. The hand will still be 2-away from ready after all. Second, the probability of drawing another {\LARGE\suo{2}} is not very high because there are only two tiles left. 
+Ta ręka jest 2-{\jap shanten} i ma jedną parę, która nie jest dobrym kandydatem na grupkę z dwóch powodów.
+Po pierwsze, jeśli dostaniemy kolejne \InlineTile{s2}, zyskamy grupkę, ale stracimy parę i nasza ręka pozostanie 2-{\jap shanten}.
+Po drugie: szanse na kolejne \InlineTile{s2} są niewielkie --- zostały tylko dwie sztuki.
 
 \bigskip
-What if a hand has two pairs? Suppose we drew {\LARGE\wan{1}} and discarded {\LARGE\bei}, as follows.
+Co, jeśli ręka będzie miała dwie pary?
+Załóżmy, że dobieramy \InlineTile{m1} i pozbywamy się \InlineTile{z4}.
 
 \bigskip
-\begin{itembox}[r]{2. Hand with two pairs}
-\bp
-\wan{1}\wan{1}\wan{3}\wan{5}\tong{5}\tong{6}\tong{7}\tong{8}\tong{9}\suo{2}\suo{2}\suo{6}\suo{7}
-\ep
-\end{itembox}
-\noindent This hand is also 2-away, but it has two pairs: {\LARGE\wan{1}\wan{1}} and {\LARGE\suo{2}\suo{2}}. 
-Each of these pairs is now functioning as an effective candidate for a set. Whenever one pair becomes a set, the other pair becomes the head. Drawing {\LARGE\wan{1}} or {\LARGE\suo{2}} will advance this hand from 2-away to 1-away. 
+\begin{screen}
+\CenteredLargeHand{m1135p56789s2267}
+\end{screen}
+\noindent Ta ręka też jest 2-{\jap shanten}.
+Każda z par może rozwinąć się do trójki.
+Po dobraniu \InlineTile{m1} lub \InlineTile{s2} będziemy mieli 1-{\jap shanten}.
 
 \bigskip
-Moreover, whereas the hand with one pair was able to accept two tiles of {\LARGE\suo{2}}, the hand with two pairs can accept four tiles (two of {\LARGE\suo{2}} and two of {\LARGE\wan{1}}). The probability of drawing any one of four tiles is obviously higher than the probability of drawing any one of two tiles. 
-In general, for each additional pair in a hand, tile acceptance increases by two. 
+Dodatkowo, ręka z jedną parą czeka na dwie sztuki \InlineTile{s2}.
+Ręka z dwiema parami czeka już na cztery kamienie.
+Ogólnie rzecz biorąc, {\jap ukeire} zwiększa się o 2 kamienie przy każdej zebranej parze.
 
 \bigskip
-What if a hand has three pairs? Suppose we draw {\LARGE\suo{6}}, as follows. 
+Co, jeśli ręka ma trzy pary? Przypuśćmy, że dobieramy \InlineTile{s6}:
 
 \bigskip
-\begin{itembox}[r]{3. Hand with three pairs}
-\bp
-\wan{1}\wan{1}\wan{3}\wan{5}\tong{5}\tong{6}\tong{7}\tong{8}\tong{9}\suo{2}\suo{2}\suo{6}\suo{7}~\suo{6}\\
-\hfill\footnotesize{Draw~~~~~~~~~~~}
-\ep
-\end{itembox}
-\noindent If we keep the second {\LARGE\suo{6}} and discard the {\LARGE\suo{7}} or the {\LARGE\wan{5}}, the hand has three pairs. However, keeping three pairs in a hand is inefficient. Recall that each additional pair increases tile acceptance by two tiles. In this case, keeping a pair of {\LARGE\suo{6}} means that the hand can accept two additional tiles of {\LARGE\suo{6}}. However, doing so comes with a cost. Keeping three pairs by discarding the {\LARGE\suo{7}} means the hand can no longer accept {\LARGE\suo{5} \suo{8}} (2 kinds--8 tiles). The net tile acceptance gain will be negative ($2-8 = -6$). Similarly, keeping three pairs by discarding the {\LARGE\wan{5}} means the hand can no longer accept {\LARGE\wan{4}} (4 tiles). 
-%Again, the net tile acceptance gain is negative. 
-Therefore, discarding a {\LARGE\suo{6}} to maintain two pairs is the most efficient. 
+\begin{screen}
+\CenteredLargeHand{m1135p56789s2267~6}
+\end{screen}
+\noindent Jeśli zatrzymamy drugie \InlineTile{s6} i wyrzucimy \InlineTile{s7} lub \InlineTile{m5}, ręka będzie miała trzy pary.
+Trzymanie trzech par na ręce jest niekorzystne.
+Dla przypomnienia --- każda para zwiększa {\jap ukeire} o dwa kamienie, w tym przypadku dwie sztuki \InlineTile{s66}.
+Nie odbywa się to jednak bez strat --- zatrzymując 3 pary, po wyrzuceniu \InlineTile{s7} pozbywamy się szans na \InlineTile{s5}.
+Podobnie jest z odrzuceniem \InlineTile{m5} --- tracimy {\jap ukeire} w postaci \InlineTile{m4}.
+W związku z tym najefektywniejszym odrzutem będzie \InlineTile{s6}.
 
 \bigskip
-What we have seen so far is generalizable beyond the current examples. As long as we intend to keep the hand closed (i.e., not calling {\jap pon} or {\jap chii}), we should avoid having three pairs in a hand. Having three pairs makes for the weakest form, whereas having two pairs makes for the strongest form.\footnote{What if there are four or more pairs? Whenever a hand has four pairs, it is 2-away from ready for {\jap chiitoitsu} (Seven Pairs). It may be faster to pursue {\jap chiitoitsu} than pursuing a standard hand in such cases.}
+Powyższe przykłady można przenieść na szerszy zakres sytuacji.
+Jeśli chcemy złożyć zamknięty układ, powinniśmy unikać trzech par na ręce --- dają one najsłabszą kompozycję.
+Dwie pary dają największe możliwości manewru.
+Jeśli nasza ręka ma cztery pary, warto rozważyć {\jap Chiitoitsu}.
 
 \bigskip
 
 \color{MyRed}
-\begin{itembox}[c]{Value of pairs: closed hand}
+\begin{itembox}[c]{Efektywność par: zamknięta ręka}
 \centering\normalcolor
-2 pairs > 1 pair, 4 pairs > 3 pairs
+2 pary > 1 para, 4 pary > 3 pary
 \end{itembox}\normalcolor
 
 \bigskip
 
-\subsubsection{Open hand}
+\subsubsection{Otwarta ręka}
 
-There is an important caveat to the above rule. 
-When we intend to call {\jap pon}, having three pairs is actually better than having two pairs. This is because the hand will become a two-pair hand after we call {\jap pon} once.
-For example, consider the following hand. 
-\begin{itembox}[r]{Two pairs vs. three pairs}
-\bp
-\wan{1}\wan{1}\wan{3}\wan{5}\tong{4}\tong{5}\suo{2}\suo{4}\suo{4}\suo{7}\suo{8}\suo{9}\zhong\zhong~\zhong\\
-\hfill\footnotesize{{\jap Dora}~~~~~~~~}
-\ep
-\vspace{-17pt}What would you discard? \vspace{-5pt}
-\end{itembox}
+Jest jeden kruczek dotyczący powyższej reguły.
+Jeśli chcemy meldować {\jap pon}y, trzy pary są bardziej wskazane niż dwie.
+Jest tak dlatego, że po meldunku nasza ręka będzie mieć dwie pary.
+Przykładowo:
+\begin{screen}
+\CenteredLargeHand{m1135p45s244789z77~7}
+\vspace{-15pt}\hfill{\footnotesize{\jap Dora}~~~~~~~}\\
+\vspace{-2pt}Który kamień należy odrzucić?\vspace{-5pt}
+\end{screen}
 \noindent
-We would definitely intend to call {\jap pon} on {\LARGE\zhong}. Anticipating that, we should discard {\LARGE\wan{5}} to keep three pairs in this case rather than discarding {\LARGE\wan{1}} to have two pairs. After calling {\jap pon} on {\LARGE\zhong}, we will have a choice between discarding  {\LARGE\wan{3}} or {\LARGE\suo{2}}.
-\bp
-\wan{1}\wan{1}\tong{4}\tong{5}\suo{2}\suo{4}\suo{4}\suo{7}\suo{8}\suo{9}~\zhong\rzhong\zhong\\
-\wan{1}\wan{1}\wan{3}\tong{4}\tong{5}\suo{4}\suo{4}\suo{7}\suo{8}\suo{9}~\zhong\rzhong\zhong
-\ep
-In either case, the hand will have two pairs after calling {\jap pon}. 
+Zdecydowanie chcemy zdobyć trójkę \InlineTile{z7}.
+Mając to na uwadze, powinniśmy odrzucić \InlineTile{m5} i zachować trzy pary.
+Po meldunku będziemy wybierać między \InlineTile{m3} a \InlineTile{s2}.
+{\CenteredLargeHand{m11p45s244789~z77*7}}
+{\CenteredLargeHand{m113p45s44789~z77*7}}
+W obu przypadkach będziemy mieli dwie pary po meldunku.
 
 \bigskip
 
 \color{MyRed}
-\begin{itembox}[c]{Value of pairs: open hand}
+\begin{itembox}[c]{Efektywność par: otwarte ręce}
 \centering\normalcolor
-3 pairs > 2 pairs
+3 pary > 2 pary
 \end{itembox}\normalcolor
 
 \bigskip
