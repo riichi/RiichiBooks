@@ -1,0 +1,3 @@
+[submodule "tikz-riichi"]
+	path = tikz-riichi
+	url = https://github.com/riichi/tikz-riichi
