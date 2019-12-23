@@ -196,7 +196,7 @@ Kiedy ręka jest 1-{\jap shanten}, powinniśmy starać się zrobić z niej {\jap
 Przykładowo, rozważmy następującą sytuację:
 \begin{screen}
 \CenteredLargeHand{m5677p34s45579z666}
-\vspace{-10pt}Co należy odrzucić? \vspace{-5pt}
+\vspace{-10pt}Który kamień należy odrzucić?\vspace{-5pt}
 \end{screen}
 \noindent
 Odrzucenie \InlineTile{s9} sprawia, że ręka staje się 2-{\jap shanten}, a odrzucenie \InlineTile{m7} lub \InlineTile{s4} sprawia, że ręka staje się 1-{\jap shanten}.
@@ -417,82 +417,80 @@ W obu przypadkach będziemy mieli dwie pary po meldunku.
 
 \bigskip
 
-\subsection{Perfect $n$-away}\label{sec:perfect}
+\subsection{Idealny $n$-{\jap shanten}}\label{sec:perfect}
 
-\subsubsection{Perfect 1-away} 
-	\index{1-away (1-{\jap shanten})!perfect 1-away}
-When a 1-away hand has two side-wait protoruns and two pairs, it is called {\bf perfect 1-away}. 
-\bigskip
-\begin{itembox}[r]{Perfect 1-away}
-\bp
-\wan{2}\wan{3}\wan{3}\tong{1}\tong{2}\tong{3}\tong{6}\tong{6}\suo{6}\suo{7}\bai\bai\bai\\
-\ep
-\end{itembox}
-The hand above is an example of perfect 1-away. It is called ``perfect'' because this hand can become ready either by calling {\jap chii}, calling {\jap pon}, or drawing a tile to complete a run or a set, and no matter how a hand becomes ready, you will \emph{always} have the option to choose side wait as the final wait.
+\subsubsection{Idealny 1-{\jap shanten}}
+	\index{1-{\jap shanten}!perfect 1-away}
+Kiedy ręka 1-{\jap shanten} zawiera dwa {\jap ryanmen} i parę, mówimy że jest w {\bf idealnym 1-{\jap shanten}}:
+\begin{screen}
+	\CenteredLargeHand{m233p12366s67z555}
+\end{screen}
+Jest to idealny 1-{\jap shanten}, gdyż bez względu na to, czy zameldujemy {\jap chii}, {\jap pon}, czy też dobierzemy którykolwiek brakujący kamień z muru, zawsze mamy możliwość pozostania w {\jap tenpai} z dwustronnym czekaniem.
 
-\subsubsection{Perfect 2-away}
-	\index{2-away (2-{\jap shanten})!perfect 2-away}
-One step prior to achieving perfect 1-away, we may get a perfect 2-away hand. Perfect 2-away is made up with three side-wait protoruns and three pairs, as follows.
-\bigskip
-\begin{itembox}[r]{Perfect 2-away}
-\bp
-\wan{2}\wan{3}\wan{3}\tong{2}\tong{3}\tong{6}\tong{6}\suo{6}\suo{7}\suo{7}\bai\bai\bai\\
-\ep
-\end{itembox}
-When a perfect 2-away hand becomes 1-away, it can always be perfect 1-away (unless you choose not to, for some reason). However, not all perfect 1-away hands evolve from a perfect 2-away hand. 
+\subsubsection{Idealny 2-{\jap shanten}}
+	\index{2-{\jap shanten}!perfect 2-away}
+Przed osiągnięciem idealnego 1-{\jap shanten}, możemy też znaleźć się w {\bf idealnym 2-{\jap shanten}}.
+Składa się on z trzech {\jap ryanmen} i trzech par:
+\begin{screen}
+	\CenteredLargeHand{m233p2366s677z555}
+\end{screen}
+Idealny 2-{\jap shanten} zawsze da się rozwinąć do idealnego 1-{\jap shanten} (choć nie jest to konieczne).
+Jednakże nie każdy idealny 1-{\jap shanten} ewoluuje z idealnego 2-{\jap shanten}.
 
 \newpage
-\subsection{Putting things all together: an example}\label{sec:ptat}
+\subsection{Łączenie opisanych elementów}\label{sec:ptat}
 
-Let's see some hand examples that illustrate how we can apply the tile efficiency logics we have learned so far. Consider the following 2-away hand. 
-\begin{itembox}[r]{Advancing a hand 1}
-\bp
-\wan{5}\wan{5}\wan{7}\suo{2}\suo{4}\suo{8}\suo{8}\suo{9}\tong{2}\tong{3}\tong{7}\tong{8}\tong{9}~\suo{2}\\
-\hfill\footnotesize{Draw~~~~~~~~~~~}
-\ep
-\vspace{-17pt}What would you discard? \vspace{-5pt}
-\end{itembox}
-\noindent
-The hand now has three pairs, and we should avoid it. In order to reduce the number of pairs in this hand from three to two, our discard candidates should be {\LARGE\wan{5}}, {\LARGE\suo{2}}, or {\LARGE\suo{8}}. Which one should we choose? 
+Przyjrzyjmy się kilku rękom, aby zobaczyć, jak wyglądają w praktyce opisane wcześniej zasady.
 
-\bigskip
-Recall that a closed-wait protorun of 57 is stronger than a closed-wait protorun of 24 or an edge-wait protorun of 89. Therefore, it is OK to cut down the {\LARGE\wan{5}\wan{5}\wan{7}} shape to {\LARGE\wan{5}\wan{7}} by discarding {\LARGE\wan{5}}. This is because {\LARGE\wan{5}\wan{7}} can become a side-wait protorun relatively easily. On the other hand, the {\LARGE\suo{2}\suo{2}\suo{4}} shape and the {\LARGE\suo{8}\suo{8}\suo{9}} shape are both weak; the first can become a side-wait protorun only if we draw {\LARGE\suo{5}}, and the second one will never become a side-wait protorun in one step. Therefore, both {\LARGE\suo{2}\suo{2}\suo{4}} and {\LARGE\suo{8}\suo{8}\suo{9}} should be kept as a candidate for the head or a group rather than making them into weak closed-wait protoruns.
+Rozważmy następującą rękę 2-{\jap shanten}:
+\begin{screen}
+	\CenteredLargeHand{m557s24889p23789~s2}
+	\vspace{-15pt}\hfill{\footnotesize{Dobór~~~~~~~~~}}\\
+	\vspace{-2pt}Który kamień należy odrzucić?\vspace{-5pt}
+\end{screen}
+Nasza ręka ma trzy pary.
+Powinniśmy tego unikać, a więc wybieramy pomiędzy \InlineTile{m5}, \InlineTile{s2} a \InlineTile{s8}.
+Który z nich należy odrzucić?
 
 \bigskip
-Let's say we discard {\LARGE\wan{5}}, and then we draw {\LARGE\wan{8}}, resulting in the following hand. 
-\begin{itembox}[r]{Advancing a hand 2}
-\bp
-\wan{5}\wan{7}\suo{2}\suo{2}\suo{4}\suo{8}\suo{8}\suo{9}\tong{2}\tong{3}\tong{7}\tong{8}\tong{9}~\wan{8}\\
-\hfill\footnotesize{Draw~~~~~~~~~~~}
-\ep
-\vspace{-17pt}What would you discard? \vspace{-5pt}
-\end{itembox}
-\noindent
-Now that we have a side-wait protorun {\LARGE\wan{7}\wan{8}}, we should discard {\LARGE\wan{5}}. 
+Wiemy już, że {\jap kanchan} 57 jest lepszy od {\jap kanchan}a 24 i {\jap penchan}a 89.
+Dobrze jest zatem zredukować kształt \InlineTile{m557} do \InlineTile{m57} odrzucając \InlineTile{m5}.
+{\jap Kanchan} 57 stosunkowo łatwo zmienić w {\jap ryanmen} --- pierwszy z kształtów \InlineTile{s224} i \InlineTile{s889} ewoluuje w {\jap ryanmen} wyłącznie po dobraniu \InlineTile{s5}, zaś drugi nigdy nie ewoluuje w {\jap ryanmen} w jednym kroku.
+Lepiej zatem trzymać je jako potencjalnych kandydatów na grupki lub parę.
 
 \bigskip
-Let's say we draw {\LARGE\suo{7}}, resulting in the following hand. 
-\begin{itembox}[r]{Advancing a hand 3}
-\bp
-\wan{7}\wan{8}\suo{2}\suo{2}\suo{4}\suo{8}\suo{8}\suo{9}\tong{2}\tong{3}\tong{7}\tong{8}\tong{9}~\suo{7}\\
-\hfill\footnotesize{Draw~~~~~~~~~~~}
-\ep
-\vspace{-17pt}What would you discard? \vspace{-5pt}
-\end{itembox}
-\noindent
-This hand is now 1-away from ready, and our discard choice is between {\LARGE\suo{4}} and {\LARGE\suo{8}}. Both tiles are equally useless from our perspective, and so we will eventually discard them both. The question is which one we should discard first. Recall that a 4 is more versatile than an 8. This means that {\LARGE\suo{4}} in this hand may later become dangerous for the opponents; we should thus discard {\LARGE\suo{4}} now rather than later. 
+Powiedzmy więc, że odrzuciliśmy \InlineTile{m5}, a następnie dobraliśmy \InlineTile{m8}.
+\begin{screen}
+	\CenteredLargeHand{m57s224889p23789~m8}
+	\vspace{-15pt}\hfill{\footnotesize{Dobór~~~~~~~~~}}\\
+	\vspace{-2pt}Który kamień należy odrzucić?\vspace{-5pt}
+\end{screen}
+Mamy {\jap ryanmen} \InlineTile{m78} --- nie potrzebujemy już \InlineTile{m5}, zatem go wyrzucamy.
+
+\pagebreak
+Następnym kamieniem z muru jest \InlineTile{s7}:
+\begin{screen}
+	\CenteredLargeHand{m78s224889p23789~s7}
+	\vspace{-15pt}\hfill{\footnotesize{Dobór~~~~~~~~~}}\\
+	\vspace{-2pt}Który kamień należy odrzucić?\vspace{-5pt}
+\end{screen}
+Jesteśmy 1-{\jap shanten} --- wybieramy pomiędzy \InlineTile{s4} a \InlineTile{s8}.
+Oba są dla nas bezużyteczne, więc planujemy się ich pozbyć.
+Który zatem odrzucić najpierw?
+Pamiętamy, że 4 są z reguły bardziej użyteczne od 8.
+\InlineTile{s4} może być więc przydatna dla pozostałych graczy --- zatem im wcześniej ją wyrzucimy, tym lepiej. 
 
 \bigskip
-Let's say we draw {\LARGE\tong{4}} after that, resulting in the following hand.
-\begin{itembox}[r]{Advancing a hand 4}
-\bp
-\wan{7}\wan{8}\suo{2}\suo{2}\suo{7}\suo{8}\suo{8}\suo{9}\tong{2}\tong{3}\tong{7}\tong{8}\tong{9}~\tong{4}\\
-\hfill\footnotesize{Draw~~~~~~~~~~~}
-\ep
-\vspace{-17pt}What would you discard? \vspace{-5pt}
-\end{itembox}
+Powiedzmy, że wyrzuciliśmy \InlineTile{s4} i dobraliśmy \InlineTile{p4}:
+\begin{screen}
+	\CenteredLargeHand{m78s227889p23789~p4}
+	\vspace{-15pt}\hfill{\footnotesize{Dobór~~~~~~~~~}}\\
+	\vspace{-2pt}Który kamień należy odrzucić?\vspace{-5pt}
+\end{screen}
 \noindent
-The hand is now ready. We should discard {\LARGE\suo{8}} and call riichi. If we win on {\LARGE\wan{9}}, we can claim riichi, {\jap pinfu}, and {\jap sanshoku} (Mixed Triple Chow), giving us 7700 points.\footnote{We will discuss scoring and {\jap yaku} more extensively in later chapters.}
+Ręka jest teraz w {\jap tenpai}.
+Wyrzucamy \InlineTile{s8} i zgłaszamy {\jap riichi}.
+Jeśli wygramy na \InlineTile{m9}, dostajemy {\jap riichi}, {\jap pinfu} i {\jap sanshoku}, warte 7700 punktów.\footnote{Punktacja i {\jap yaku} będą szerzej omówione w następnych rozdziałach.}
 
 \newpage
 \section{Complex shapes}
