@@ -493,125 +493,144 @@ Wyrzucamy \InlineTile{s8} i zgłaszamy {\jap riichi}.
 Jeśli wygramy na \InlineTile{m9}, dostajemy {\jap riichi}, {\jap pinfu} i {\jap sanshoku}, warte 7700 punktów.\footnote{Punktacja i {\jap yaku} będą szerzej omówione w następnych rozdziałach.}
 
 \newpage
-\section{Complex shapes}
-The three basic types of tile blocks we have covered so far --- groups (runs and sets), protoruns (side wait, closed wait, and edge wait), and pairs --- form the basis of any standard mahjong hands.\footnote{Standard hands are those with four groups and one head. Non-standard hands are {\jap chiitoitsu} (Seven Pairs) and {\jap kokushi musou} (Thirteen Orphans).}  
-When a hand has some tiles that do not constitute any of these three shapes, we treat them as {\bf floating tiles}. For example, {\LARGE\wan{5}} and {\LARGE\suo{6}} in the following hand are both floating tiles. 
-\bigskip
-\begin{itembox}[r]{Hand with floating tiles}
-\bp
-\wan{5}\wan{8}\wan{9}\tong{2}\tong{3}\tong{4}\tong{5}\tong{6}\tong{7}\suo{1}\suo{2}\suo{3}\suo{6}
-\ep
-\end{itembox}
+\section{Złożone kształty}
+Trzy rodzaje kombinacji kamieni poznanych do tej pory --- grupki (trójki i sekwensy), niekompletne sekwensy (zewnętrzny, środkowy i skrajny) i pary --- to fundamenty każdej standardowej ręki w Mahjongu.\footnote{
+	Standardowa ręka to w tym przypadku ta składająca się z czterech grup i jednej pary.
+	Niestandardowe ręce to {\jap chiitoitsu} i {\jap kokushi musou}.
+}
+Kamienie, które nie należą do żadnej ze wspomnianych kategorii, nazywamy {\bf luźnymi}.
+Przykładowo, w poniższej ręce \InlineTile{m5} oraz \InlineTile{s6} są luźne:
+\begin{screen}
+	\CenteredLargeHand{m589p234567s1236}
+\end{screen}
+Poza wyżej wymienionymi elementami często napotykamy rozbudowane kombinacje złożone z dwóch lub więcej grupek, niekompletnych grupek, par i luźnych kamieni.
+Takie kombinacje lepiej rozpatrywać jako całość niż rozbijać na mniejsze składowe.
+W dalszej części omówimy trzy- i czterokamienne kombinacje.
 
-\bigskip
-In addition to these basic blocks, we often come across complex shapes that are made up of two or more groups, protoruns, pairs, and floating tiles combined. It is useful to comprehend such complex shapes as they are rather than breaking them up into smaller parts. We will discuss three-tile complex shapes and four-tile complex shapes in turn. 
-
-\subsection{Three-tile complex shapes} 
-
-There are two kinds of three-tile complex shapes --- double closed shape and protorun plus one shape.
+\subsection{Trzykamienne kombinacje}
+Istnieją dwa rodzaje trzykamiennych kombinacji --- {\jap ryankan} (podwójny {\jap kanchan}) i niekompletny sekwens z parą.
 
 \vfill
-\subsubsection{Double closed ({\jap ryankan}) shape} \label{sec:ryankan}
+\subsubsection{Podwójny środkowy niekompletny sekwens ({\jap ryankan})} \label{sec:ryankan}
 	\index{double closed shape@double closed ({\jap ryankan}) shape} 
 	\index{ryankan@{\jap ryankan} (double closed) shape}
-When two closed-wait protoruns are combined, we have a {\bf double closed} ({\jap ryankan}) shape. 
-There are five different patterns in each suit, as follows.
-\bp
-\suo{1}\suo{3}\suo{5}~~\suo{2}\suo{4}\suo{6}~~\suo{3}\suo{5}\suo{7}\\
-\suo{4}\suo{6}\suo{8}~~\suo{5}\suo{7}\suo{9}
-\ep
-Each shape accepts as many as 2 kinds--8 tiles. For example, {\LARGE\suo{1}\suo{3}\suo{5}} accepts {\LARGE\suo{2}} (4 tiles) and {\LARGE\suo{4}} (4 tiles). This is twice as many as the number of tiles an isolated closed-wait protorun can accept. 
+Kiedy skleimy dwa środkowe niekompletne sekwensy, dostajemy {\jap ryankan}.
+Występują one w pięciu formach:
+{
+	\CenteredLargeHand{s135~~246~~357}
+	\CenteredLargeHand{s468~~579}
+}
+Każdy {\jap ryankan} akceptuje 2 rodzaje kamieni -- 8 sztuk.
+Przykładowo, \InlineTile{s135} akceptuje \InlineTile{s24} --- to dwa razy więcej kamieni niż {\jap penchan}.
 
 \bigskip
-Sometimes a double closed shape is embedded within a tile block, making it difficult to detect it. 
-For example, consider the following 1-away hand. 
-\begin{itembox}[r]{Hand with a double closed shape}
-\vspace{-5pt}
-\bp
-\hspace{-202pt}{\footnotesize\color{red!75!black} Red}\\ \vspace{-16pt}
-\wan{4}\rfw\wan{5}\wan{7}\wan{8}\wan{9}\tong{4}\tong{5}\tong{6}\tong{6}\tong{7}\suo{7}\suo{7}~\tong{2}\\
-\hfill\footnotesize{Draw~~~~~~~~~~~}
-\ep
-\vspace{-15pt}What would you discard? \vspace{-5pt}
-\end{itembox}
-\noindent
-Before drawing {\LARGE\tong{2}}, the hand was already in a very good shape. It was perfect 1-away, accepting any of {\LARGE\wan{3}\wan{5}\wan{6}\tong{5}\tong{8}\suo{7}} (6 kinds--19 tiles). The question is whether we should keep {\LARGE\tong{2}} and discard {\LARGE\wan{5}} instead. \index{1-away (1-{\jap shanten})!perfect 1-away}
+{\jap Ryankan}y lubią czasem {\bf wmieszać się w tłum}, przez co można je łatwo przeoczyć.
+Przykładowo rozważmy poniższą rękę:
+\begin{screen}
+	\CenteredLargeHand{m405789p45667s77~p2}
+	\vspace{-15pt}\hfill{\footnotesize{Dobór~~~~~~~~~}}\\
+	\vspace{-2pt}Który kamień należy odrzucić?\vspace{-5pt}
+\end{screen}
+Już przed doborem \InlineTile{p2} ręka była w bardzo dobrym stanie: idealny 1-{\jap shanten}, akceptujący \InlineTile{m356p58s7} (6 rodzajów -- 19 kamieni).
+Pytanie brzmi: czy powinniśmy zachować \InlineTile{p2} i zamiast tego wyrzucić \InlineTile{m5}?
+\index{1-{\jap shanten}!perfect 1-away}
 
 \bigskip
-Notice that, if we keep {\LARGE\tong{2}}, we have a double closed shape {\LARGE\tong{2}\tong{4}\tong{6}}. This is because the block {\LARGE\tong{2}\tong{4}\tong{5}\tong{6}\tong{6}\tong{7}} can be split into {\LARGE\tong{2}\tong{4}\tong{6}} and {\LARGE\tong{5}\tong{6}\tong{7}}. 
-If we keep {\LARGE\tong{2}} and discard {\LARGE\wan{5}}, the hand is still 1-away from ready, accepting {\LARGE\wan{3}\wan{6}\tong{3}\tong{5}\tong{8}} (5 kinds--19 tiles). The benefit of discarding {\LARGE\wan{5}} to keep the double closed shape is that the hand can \emph{always} be {\jap pinfu} when it is ready. On the other hand, discarding {\LARGE\tong{2}} means that the hand may become a {\jap yaku}-less hand when drawing {\LARGE\wan{5}} or {\LARGE\suo{7}}.
+Zauważmy, że zostawiając \InlineTile{p2} tworzymy {\jap ryankan} \InlineTile{p246}.
+Kombinację \InlineTile{p245667} możemy bowiem rozbić na \InlineTile{p246} oraz \InlineTile{p567}.
+Zatem jeśli zostawimy \InlineTile{p2} i odrzucimy \InlineTile{m5}, dalej pozostaniemy w 1-{\jap shanten}, akceptując \InlineTile{m36p358} (5 rodzajów -- 19 kamieni).
+Zysk jest taki, że odrzucając \InlineTile{m5} mamy \emph{gwarantowane} {\jap pinfu}, gdy staniemy się {\jap tenpai}.
+Z drugiej strony, odrzucenie \InlineTile{p2} tworzy ryzyko braku {\jap yaku} (po dobraniu \InlineTile{m5} lub \InlineTile{s7}).
 
 \bigskip
-Double closed shapes are particularly useful when a hand is relatively far from ready (2-away or worse). As a hand advances, however, its usefulness diminishes because this block requires \underline{three} (not two) tiles even though it is not a complete group. 
-Moreover, it will ultimately become a single closed-wait protorun when this block remains incomplete when the hand is ready. 
-Therefore, we should not rely too much on a double closed shape. 
-For example, consider the following two hands. 
-\bp
-\wan{1}\wan{1}\wan{3}\wan{4}\wan{5}\tong{6}\tong{7}\tong{8}\suo{2}\suo{4}\suo{6}\zhong\zhong~\wan{2}\\
-\hfill\footnotesize{Draw~~~~~~~~~~~~~~~}
-\ep 
-\vspace{-20pt}
-\bp
-\wan{3}\wan{4}\wan{7}\wan{8}\wan{9}\tong{3}\tong{4}\tong{5}\tong{8}\tong{8}\suo{2}\suo{4}\suo{6}~\tong{7}\\
-\hfill\footnotesize{Draw~~~~~~~~~~~~~~~}
-\ep
+{\jap Ryankan}y przydają się najczęściej, gdy ręka jest stosunkowo daleko od {\jap tenpai} (2-{\jap shanten} i dalej).
+W miarę jak zbliżamy się do {\jap tenpai}, ich przydatność maleje, gdyż zajmują aż 3 kamienie na ręce nie będąc kompletną grupą.
+Co więcej, kiedy stajemy się {\jap tenpai} i mamy na ręce {\jap ryankan}, po odrzucie zmienia się on w {\jap kanchan}.
+Dlatego nie powinniśmy na nich nadmiernie polegać.
+Przykładowo, rozważmy następujące dwie ręce:
+{
+	\noindent\CenteredLargeHand{m11345p678s246z77~m2}
+	\vspace{-15pt}\hfill{\footnotesize{Dobór~~~~~~~~~~~~}}
+}
+{
+	\CenteredLargeHand{m34789p34588s246~p7}
+	\vspace{-15pt}\hfill{\footnotesize{Dobór~~~~~~~~~~~~}}
+}
 
-Both hands are 1-away from ready and both contain a double closed shape in {\jap souzu} (bamboos) tiles. Maintaining the double closed shape in these cases will not be ideal. 
-It is true that, if the hand becomes ready by drawing {\LARGE\suo{3}} or  {\LARGE\suo{5}} first, each of the hands makes for a good-wait ready hand. However, if the first hand becomes ready by calling {\jap pon} on {\LARGE\zhong} or the second hand becomes ready by drawing {\LARGE\wan{2}} or {\LARGE\wan{5}} first, they only make for a closed-wait ready hand. 
+Obie ręce są 1-{\jap shanten} i obie zawierają ten sam {\jap ryankan} z {\jap souzu}.
+Trzymanie {\jap ryankana} nie jest jednak optymalne.
+Jeśli dobierzemy \InlineTile{s3} lub \InlineTile{s5}, ewoluujemy do {\jap tenpai} z dobrym czekaniem.
+Jeśli jednak zameldujemy \InlineTile{z7} (w przypadku pierwszej ręki) lub dobierzemy \InlineTile{m2}/\InlineTile{m5} (w przypadku drugiej ręki), czekanie w {\jap tenpai} będzie środkowe.
 
 \bigskip
-Therefore, when we draw a tile next to the head, creating a side-wait protorun, we should keep it and break the double closed shape instead. In the first example above, as we draw {\LARGE\wan{2}} that creates a side-wait protorun {\LARGE\wan{4}\wan{5}}, we should keep it and discard the {\LARGE\suo{2}} instead. In the second example above, as we draw {\LARGE\tong{7}} that creates a side-wait protorun {\LARGE\tong{7}\tong{8}}, we should keep it and discard {\LARGE\suo{2}} instead. 
+Z tego względu, po dobraniu kamienia sąsiedniego do pary (tworzącego {\jap ryanmen}), powinniśmy rozebrać {\jap ryankan}.
+W pierwszym z przykładów \InlineTile{m2} daje {\jap ryanmen} \InlineTile{m45}, który powinniśmy zachować i odrzucić \InlineTile{s2}.
+W drugim przykładzie \InlineTile{p7} tworzy {\jap ryanmen} \InlineTile{p78}, który powinniśmy zatrzymać kosztem \InlineTile{s2}.
 
-\subsubsection{Protorun plus one shape}
+\subsubsection{Kształt ,,niekompletny sekwens plus luźny kamień''}
 
-As we saw with the first example in Section \ref{sec:ptat}, we often come across a tile combination such as {\LARGE\wan{5}\wan{5}\wan{7}} that is made up with one protorun plus one floating tile ({\LARGE\wan{5}\wan{7}} + {\LARGE\wan{5}}).\footnote{Alternatively, we can think of these combinations as a pair plus one {\wan{5}\wan{5} + \wan{7}}.}
-Depending on the type of protoruns, we can classify protorun plus one shapes into three types, as summarized in Table \ref{tbl:protoone}. 
-
+Jak mieliśmy okację już zobaczyć w sekcji \ref{sec:ptat}, często napotykamy na kombinacje takie jak \InlineTile{m557}, złożone z niekompletnego sekwensu i jednego powtórzonego kamienia (\InlineTile{m57} + \InlineTile{m5}).\footnote{
+	Można też traktować je jako parę oraz luźny kamień:
+	\InlineTile{m55} + \InlineTile{m7}.
+}
+W zależności od rodzaju niekompletnego sekwensu możemy je podzielić na trzy kategorie:
 \bigskip
 
 {\begin{table}[h!]\centering\small \captionsetup{font=footnotesize}
-\caption{Types of protorun plus one shapes} \label{tbl:protoone}
+\caption{Rodzaje kształtów ,,niekompletny sekwens plus luźny kamień''} \label{tbl:protoone}
 \begin{tabular}{l c c c}
 \toprule
-Name & Example & Wait & Acceptance\\
+Nazwa & Przykład & Czekanie & {\jap Ukeire}\\
 \midrule
-side wait +1 & {\LARGE \wan{3}\wan{3}\wan{4}} & {\LARGE \wan{2}-\wan{5} \wan{3}} & 3 kinds--10 tiles\\ [\sep]
-closed wait +1 & {\LARGE \tong{2}\tong{2}\tong{4}} & {\LARGE \tong{2} \tong{3}} & 2 kinds--6 tiles\\ [\sep]
-edge wait +1 & {\LARGE \suo{8}\suo{8}\suo{9}} & {\LARGE \suo{7} \suo{8}} & 2 kinds--6 tiles\\ [\sep]
+{\jap ryanmen} +1
+	& \InlineTile{m334}
+	& \InlineTile{m235}
+	& 3 rodzaje -- 10 kamieni\\ [\sep]
+{\jap kanchan} +1
+	& \InlineTile{p224}
+	& \InlineTile{p23}
+	& 2 rodzaje -- 6 kamieni\\ [\sep]
+{\jap penchan} +1
+	& \InlineTile{s889}
+	& \InlineTile{s78}
+	& 2 rodzaje -- 6 kamieni\\ [\sep]
 \bottomrule
 \end{tabular}
 \end{table}}
 
-A protorun plus one can accept two additional tiles that an isolated protorun cannot. This is because these blocks can now be a candidate for a set as well as for a run. 
+Kształty tego typu akceptują dwa dodatkowe kamienie, których zwykłe niekompletne sekwensy nie mogą --- wynika to z faktu, że kształt ten jest jednocześnie kandydatem do trójki i do sekwensu.
 
 \bigskip
-Breaking a protorun plus one can be inefficient. For example, if we break a closed wait plus one shape into an isolated pair (i.e., discard {\LARGE\tong{4}} from {\LARGE \tong{2}\tong{2}\tong{4}}), the tile acceptance decreases from 6 to 2; it can accept only {\LARGE\tong{2}} (1 kind--2 tiles). Similarly, if we break it into an isolated protorun (i.e., discard {\LARGE\tong{2}} from {\LARGE \tong{2}\tong{2}\tong{4}}), the tile acceptance decreases from 6 to 4; it can accept only {\LARGE\tong{3}} (1 kind--4 tiles). With this in mind, consider the following hand.
-
-\begin{itembox}[r]{Protorun plus one}
-\bp
-\wan{1}\wan{1}\wan{5}\wan{7}\tong{5}\suo{1}\suo{2}\suo{3}\suo{4}\suo{7}\suo{8}\suo{9}\suo{9}~\wan{5}\\
-\hfill\footnotesize{Draw~~~~~~~~~~~}
-\ep
-\vspace{-15pt}What would you discard? \vspace{-5pt}
-\end{itembox}
-\noindent
-Discarding {\LARGE\wan{5}} or {\LARGE\wan{7}} to break the protorun plus one {\LARGE\wan{5}\wan{5}\wan{7}} is inefficient here. Discarding {\LARGE\wan{5}} decreases tile acceptance by two, and discarding {\LARGE\wan{7}} decreases tile acceptance by four. Moreover, discarding {\LARGE\wan{7}} leaves three pairs in this hand, which should be avoided. Discarding {\LARGE\suo{9}} is much more efficient. 
-
+Rozbijanie takich kombinacji może być nieefektywne.
+Na przykład odrzucenie \InlineTile{p4} z \InlineTile{p224} zmniejsza {\jap ukeire} z 6 kamieni do 2 --- zostajemy z parą czekającą na \InlineTile{p2}.
+Podobnie dzieje się, gdy rozbijamy do {\jap kanchan}a \InlineTile{p24} odrzucając \InlineTile{p2} --- akceptujemy tylko \InlineTile{p3} (1 rodzaj -- 4 kamienie).
+Mając to na uwadze, rozważmy następującą rękę:
+\begin{screen}
+	\CenteredLargeHand{m1157p5s12347899~m5}
+	\vspace{-15pt}\hfill{\footnotesize{Dobór~~~~~~~~~}}\\
+	\vspace{-2pt}Który kamień należy odrzucić?\vspace{-5pt}
+\end{screen}
+Rozbicie kombinacji \InlineTile{m557} nie jest korzystne.
+Odrzucenie \InlineTile{m5} zmniejsza {\jap ukeire} o dwa kamienie, a \InlineTile{m7} --- o 4.
+Ponadto pozbywając się \InlineTile{m7} zostawiamy na ręce trzy pary, czego powinniśmy unikać.
+Dużo lepszym wyborem w tej sytuacji jest \InlineTile{s9}.
 \bigskip
 
-Sometimes we have to make a choice between multiple protorun plus one shapes, just like we did in examples in Section \ref{sec:ptat}. 
-Consider the following hand. What would you discard?
-\begin{itembox}[r]{Multiple protoruns plus one}
-\bp
-\wan{4}\wan{4}\wan{6}\tong{3}\tong{3}\tong{4}\suo{1}\suo{2}\suo{3}\suo{4}\suo{6}\suo{8}\bei\bei
-\ep
-\vspace{-10pt}What would you discard? \vspace{-5pt}
-\end{itembox}
-\noindent
-There are two protorun plus one shapes in this hand: {\LARGE\wan{4}\wan{4}\wan{6}} and {\LARGE\tong{3}\tong{3}\tong{4}}. We have to break one of the two into either an isolated Pair or an isolated protorun, because the other parts of this hand are more or less self-sufficient. Which one should we choose?
+Czasem przy odrzucie musimy wybierać między kilkoma kształtami ,,niekompletny sekwens plus luźny kamień'', tak jak w przykładach w sekcji \ref{sec:ptat}.
+Rozważmy następującą rękę:
+\begin{screen}
+	\CenteredLargeHand{m446p334s123468z44}
+	\vspace{-10pt}Który kamień należy odrzucić?\vspace{-5pt}
+\end{screen}
+Mamy na ręce dwa z rozważanych kształtów: \InlineTile{m446} oraz \InlineTile{p334}.
+Jeden z nich musimy rozmontować, gdyż pozostałe elemnty ręki są dobre.
+Który z nich należy więc wybrać?
 
 \bigskip
-When choosing between which protoruns plus one to break, priority should be given to the weaker one. Since the side-wait protorun {\LARGE\tong{3}\tong{4}} is much stronger than the closed-wait protorun {\LARGE\wan{4}\wan{6}}, we should prioritize the latter and maintain {\LARGE\wan{4}\wan{4}\wan{6}}. In other words, the side-wait protorun {\LARGE\tong{3}\tong{4}} is so strong that we do not need to provide a cover by maintaining the ``plus one'' tile, {\LARGE\tong{3}}. On the other hand, the closed-wait protorun {\LARGE\wan{4}\wan{6}} is weaker so we should cover it by keeping another {\LARGE\wan{4}} as a back-up. You should thus discard {\LARGE\tong{3}}. 
+Przy wyborze kształtu ,,niekompletny sekwens plus luźny kamień'' do zachowania, pierwszeństwo powinien mieć ten słabszy.
+Ponieważ {\jap ryanmen} \InlineTile{p34} jest znacznie lepszy od {\jap kanchan}a \InlineTile{m46}, powinniśmy wybrać ten drugi i zostawić \InlineTile{m446}.
+Innymi słowy, {\jap ryanmen} \InlineTile{p34} jest na tyle silny, że nie potrzebujemy zwiększać mu {\jap ukeire} dodatkowym kamieniem, podczas gdy \InlineTile{m46} jest słabszy i możemy chcieć zachować dodatkowy \InlineTile{m4}, by go wzmocnić.
+Zatem w tej sytuacji powinniśmy odrzucić \InlineTile{p3}.
 
 \subsection{Four-tile complex shapes} 
 Among several different kinds of four-tile complex shapes, we will focus on those that are made up of one group and one floating tile. There are three variants of this kind --- stretched single, bulging float, and skipping.
