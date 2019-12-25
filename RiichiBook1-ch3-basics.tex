@@ -507,10 +507,10 @@ Poza wyżej wymienionymi elementami często napotykamy rozbudowane kombinacje z�
 Takie kombinacje lepiej rozpatrywać jako całość niż rozbijać na mniejsze składowe.
 W dalszej części omówimy trzy- i czterokamienne kombinacje.
 
+\newpage
 \subsection{Trzykamienne kombinacje}
 Istnieją dwa rodzaje trzykamiennych kombinacji --- {\jap ryankan} (podwójny {\jap kanchan}) i niekompletny sekwens z parą.
 
-\vfill
 \subsubsection{Podwójny środkowy niekompletny sekwens ({\jap ryankan})} \label{sec:ryankan}
 	\index{double closed shape@double closed ({\jap ryankan}) shape} 
 	\index{ryankan@{\jap ryankan} (double closed) shape}
@@ -632,100 +632,104 @@ Ponieważ {\jap ryanmen} \InlineTile{p34} jest znacznie lepszy od {\jap kanchan}
 Innymi słowy, {\jap ryanmen} \InlineTile{p34} jest na tyle silny, że nie potrzebujemy zwiększać mu {\jap ukeire} dodatkowym kamieniem, podczas gdy \InlineTile{m46} jest słabszy i możemy chcieć zachować dodatkowy \InlineTile{m4}, by go wzmocnić.
 Zatem w tej sytuacji powinniśmy odrzucić \InlineTile{p3}.
 
-\subsection{Four-tile complex shapes} 
-Among several different kinds of four-tile complex shapes, we will focus on those that are made up of one group and one floating tile. There are three variants of this kind --- stretched single, bulging float, and skipping.
+\newpage
+\subsection{Czterokamienne kombinacje}
+W tym podrozdziale skupimy się na kombinacjach posiadających luźny kamień.
+Istnieją trzy ich warianty: {\jap nobetan}, {\jap nakabure} i sekwens z parą w środku.
 
-\subsubsection{Stretched single ({\jap nobetan}) shape} \label{sec:nobetan}
-	\index{stretched single shape@stretched single ({\jap nobetan}) shape} 
-	\index{nobetan@{\jap nobetan} (stretched single) shape}
-A set of four consecutive tiles such as {\LARGE\tong{2}\tong{3}\tong{4}\tong{5}} is called a {\bf stretched single} ({\jap nobetan}) shape. Stretched single shapes are very useful both when a hand is ready and when a hand is 1-away or worse. 
-
-\bigskip
-When a stretched single shape is in a ready hand, that part forms the wait of the hand. For example, the following hand is ready, waiting for {\LARGE\wan{1} \wan{4}}.
-\bigskip
-\begin{itembox}[r]{Ready hand with a stretched single shape}
-\bp
-\wan{1}\wan{2}\wan{3}\wan{4}\tong{2}\tong{3}\tong{4}\suo{2}\suo{3}\suo{4}\zhong\zhong\zhong
-\ep 
-\end{itembox}
-In a ready hand, the stretched single shape can be thought of as a candidate for the head ({\LARGE\wan{1}} or {\LARGE\wan{4}}) and a candidate for a run ({\LARGE\wan{2}\wan{3}\wan{4}} or {\LARGE\wan{1}\wan{2}\wan{3}}). For example, if we win this hand on {\LARGE\wan{1}}, then {\LARGE\wan{1}} becomes the head, and {\LARGE\wan{2}\wan{3}\wan{4}} becomes a run. On the other hand, if we win this hand on {\LARGE\wan{4}}, then {\LARGE\wan{4}} becomes the head, and {\LARGE\wan{1}\wan{2}\wan{3}} becomes a run. 
+\subsubsection{Rozciągnięty sekwens ({\jap nobetan})} \label{sec:nobetan}
+	\index{stretched single shape@rozciągnięty sekwens}
+	\index{nobetan@{\jap nobetan}}
+{\jap Nobetan} to zbiór czterech kolejnych kamieni liczbowych, na przykład \InlineTile{p2345}.
+Są one bardzo użyteczne zarówno gdy jesteśmy {\jap tenpai}, jak i gdy ręka jest 1-{\jap shanten} lub gorzej.
 
 \bigskip
-
-Another important role that a stretched single shape can play is to work as a candidate for two runs. When a hand is 1-away or worse, we can count on a stretched single shape to produce two runs. 
-For example, consider a stretched single shape {\LARGE\tong{3}\tong{4}\tong{5}\tong{6}}. 
-If we draw {\LARGE\tong{4}}, we will have a side-wait protorun {\LARGE\tong{3}\tong{4}} in addition to a complete run {\LARGE\tong{4}\tong{5}\tong{6}}. Similarly, if we draw {\LARGE\tong{5}}, we will have a side-wait protorun {\LARGE\tong{5}\tong{6}} in addition to a complete run {\LARGE\tong{3}\tong{4}\tong{5}}. Moreover, if we draw {\LARGE\tong{2}} or {\LARGE\tong{7}}, we will have a 3-way side-wait shape {\LARGE\tong{2}\tong{3}\tong{4}\tong{5}\tong{6}} (waiting for {\LARGE\tong{1}-\tong{4}-\tong{7}}) or {\LARGE\tong{3}\tong{4}\tong{5}\tong{6}\tong{7}} (waiting for {\LARGE\tong{2}-\tong{5}-\tong{8}}). 
+Kiedy mamy {\jap nobetan} na ręce będąc {\jap tenpai}, jest on częścią decydującą o czekaniu.
+Przykładowo, poniższa ręka jest {\jap tenpai}, czekając na \InlineTile{m14}:
+\begin{screen}
+	\CenteredLargeHand{m1234p234s234z777}
+\end{screen}
+W gotowej ręce ten kształt może być traktowany jako kandydat do pary (\InlineTile{m1} lub \InlineTile{m4}) oraz sekwens (\InlineTile{m234} lub \InlineTile{m123}).
+Przykładowo, jeśli wygramy na \InlineTile{m1}, to \InlineTile{m11} staje się parą, a \InlineTile{m234} --- sekwensem.
+Analogicznie, wygrywając na \InlineTile{m4} dostajemy sekwens \InlineTile{m123} i parę \InlineTile{m44}.
 
 \bigskip
-There are six patterns of stretched single shapes, from 1234 through 6789. Table \ref{tbl:nobetan} summarizes the tiles each shape can accept to produce various waits. 
+Inną ważną rolą, jaką pełnią {\jap nobetan}y to bycie kandydatem do dwóch sekwensów.
+Kiedy jesteśmy 1-{\jap shanten} lub dalej, możemy liczyć na to, że {\jap nobetan} wyprodukuje nam dwa sekwensy.
+Przykładowo rozważmy kształt \InlineTile{p3456}.
+Jeśli dobierzemy \InlineTile{p4}, dostaniemy {\jap ryanmen} \InlineTile{p34} wraz z kompletnym sekwensem \InlineTile{p456} --- analogicznie po dobraniu \InlineTile{p5} dostajemy sekwens \InlineTile{p345} i {\jap ryanmen} \InlineTile{p56}.
+Ponadto, dobierając \InlineTile{p2} lub \InlineTile{p7}, dostajemy kształt z trzystronnym czekaniem \InlineTile{p23456} lub \InlineTile{p34567}, akceptujący odpowiednio \InlineTile{p147} lub \InlineTile{p258}.
+
+\bigskip
+Istnieje sześć wariantów {\jap notbetan}ów, od 1234 do 6789.
+Tabela \ref{tbl:nobetan} podsumowuje kamienie akceptowane przez każdy wariant produkujące dane czekanie.
 
 {\begin{table}[h!]\centering\small\captionsetup{font=footnotesize}
-\caption{Types of stretched single shapes} \label{tbl:nobetan}
+\caption{Rodzaje {\jap nobetan}ów} \label{tbl:nobetan}
 \begin{tabular}{l llll c}
 \toprule
-Shape & 3-way & 2-way & 1-way & Pair & Acceptance\\
+Kształt & 3-str. & 2-str. & 1-str. & Para & {\jap Ukeire}\\
 \midrule
-{\LARGE\wan{1}\wan{2}\wan{3}\wan{4}}
+\InlineTile{m1234}
 	&
-	& {\LARGE \wan{3} \wan{5}}
-	& {\LARGE \wan{2} \wan{6}}
-	& {\LARGE \wan{1} \wan{4}}
-	& 6 kinds--20 tiles\\ [\sep]
-{\LARGE\wan{2}\wan{3}\wan{4}\wan{5}}
-	& {\LARGE\wan{6}}
-	& {\LARGE \wan{1} \wan{3} \wan{4}}
-	& {\LARGE \wan{7}}
-	& {\LARGE \wan{2} \wan{5}}
-	& 7 kinds--24 tiles\\ [\sep]
-{\LARGE\wan{3}\wan{4}\wan{5}\wan{6}}
-	& {\LARGE\wan{2} \wan{7}}
-	& {\LARGE \wan{4} \wan{5}}
-	& {\LARGE \wan{1} \wan{8}}
-	& {\LARGE \wan{3} \wan{6}}
-	& 8 kinds--28 tiles\\ [\sep]
-{\LARGE\wan{4}\wan{5}\wan{6}\wan{7}}
-	& {\LARGE\wan{3} \wan{8}}
-	& {\LARGE \wan{5} \wan{6}}
-	& {\LARGE \wan{2} \wan{9}}
-	& {\LARGE \wan{4} \wan{7}}
-	& 8 kinds--28 tiles\\ [\sep]
-{\LARGE\wan{5}\wan{6}\wan{7}\wan{8}}
-	& {\LARGE\wan{4}}
-	& {\LARGE \wan{6} \wan{7} \wan{9}}
-	& {\LARGE \wan{3}}
-	& {\LARGE \wan{5} \wan{8}}
-	& 7 kinds--24 tiles\\ [\sep]
-{\LARGE\wan{6}\wan{7}\wan{8}\wan{9}}
+	& \InlineTile{m3~5}
+	& \InlineTile{m2~6}
+	& \InlineTile{m1~4}
+	& 6 rodz.--20 kam.\\ [\sep]
+\InlineTile{m2345}
+	& \InlineTile{m6}
+	& \InlineTile{m1~3~4}
+	& \InlineTile{m7}
+	& \InlineTile{m2~5}
+	& 7 rodz.--24 kam.\\ [\sep]
+\InlineTile{m3456}
+	& \InlineTile{m2~7}
+	& \InlineTile{m4~5}
+	& \InlineTile{m1~8}
+	& \InlineTile{m3~6}
+	& 8 rodz.--28 kam.\\ [\sep]
+\InlineTile{m4567}
+	& \InlineTile{m3~8}
+	& \InlineTile{m5~6}
+	& \InlineTile{m2~9}
+	& \InlineTile{m4~7}
+	& 8 rodz.--28 kam.\\ [\sep]
+\InlineTile{m5678}
+	& \InlineTile{m4}
+	& \InlineTile{m6~7~9}
+	& \InlineTile{m3}
+	& \InlineTile{m5~8}
+	& 7 rodz.--24 kam.\\ [\sep]
+\InlineTile{m6789}
 	&
-	& {\LARGE \wan{5} \wan{7}}
-	& {\LARGE \wan{4} \wan{8}}
-	& {\LARGE \wan{6} \wan{9}}
-	& 6 kinds--20 tiles\\ [\sep]
+	& \InlineTile{m5~7}
+	& \InlineTile{m4~8}
+	& \InlineTile{m6~9}
+	& 6 rodz.--20 kam.\\ [\sep]
 \bottomrule
 \end{tabular}
 \end{table}}
-
-As we can see, the middle two ones --- 3456 and 4567 --- are the most versatile. They can accept two different tiles to produce a 3-way wait (27 or 38), two different tiles to produce a 2-way side wait (45 or 56), and two different tiles to produce a 1-way wait (18 or 29 to produce a closed wait). The 3456 and 4567 shapes are the most valuable of all four-tile shapes, and we should not lightly break such shapes when a hand is far away from ready. With this in mind, consider the following 2-away hand. 
-
+Jak widać powyżej, dwa środkowe {\jap nobetan}y (3456 i 4567) są najbardziej wszechstronne. Akceptują dwa rodzaje kamieni produkując trzystronne czekanie, dwa rodzaje kamieni produkując dwustronne czekanie i dwa rodzaje kamieni produkując jednostronne (środkowe) czekanie.
+Ze wszystkich czterokamiennych kształtów są one najbardziej wartościowe i powinniśmy unikać rozbijania ich, gdy nasza ręka jest daleko od {\jap tenpai}.
+Mając to na uwadze, rozważmy następującą rękę:
 \vfill
+\begin{screen}
+	\CenteredLargeHand{m3456p1135s126679}
+	\vspace{-10pt}Który kamień należy odrzucić?\vspace{-5pt}
+\end{screen}
+Powyższa ręka jest 2-{\jap shanten}.
+Możemy chcieć odrzucić \InlineTile{m3} lub \InlineTile{m6}, co prowadzi do najszerszego {\jap ukeire} (7 rodzajów -- 24 kamienie).
+Jest to jednakże krótkowzroczne podejście.
+Odrzucenie któregoś z tych kamieni spowoduje, że zostaniemy z samymi {\jap kanchan}ami i {\jap penchan}em.
+Za to gdy odrzucimy \InlineTile{s9} zachowując {\jap nobetan} \InlineTile{m3456}, który łatwo może dać dwa {\jap ryanmen}.
+Powstałe {\jap ukeire} nie jest dużo mniejsze (6 rodzajów -- 20 kamieni).
+
 \bigskip
-\begin{itembox}[r]{2-away hand with a stretched single shape}
-\bp
-\wan{3}\wan{4}\wan{5}\wan{6}\tong{1}\tong{1}\tong{3}\tong{5}\suo{1}\suo{2}\suo{6}\suo{6}\suo{7}\suo{9}
-\ep
-\vspace{-10pt}What would you discard? \vspace{-5pt}
-\end{itembox}
-
-\bigskip 
-\noindent
-It is true that discarding {\LARGE\wan{3}} or {\LARGE\wan{6}} would lead to the greatest tile acceptance (7 kinds--24 tiles) temporarily. However, doing so is too myopic. If we do that, all the remaining protoruns will be closed-wait or edge-wait ones. We should rather discard {\LARGE\suo{9}} to keep the 3456 shape, which we can expect to produce two side-wait protoruns later. The resulting tile acceptance (6 kinds--20 tiles) is not much smaller, either. 
-
-\bigskip
-
 \color{MyRed}
-\begin{itembox}[c]{Four-tile complex shapes 1: {\jap nobetan}}
+\begin{itembox}[c]{Czterokamienna kombinacja 1: {\jap nobetan}}
 \normalcolor
-Try to keep a stretched single shape if a hand has one. In particular, 3456 and 4567 should be kept until the hand becomes ready or 1-away from ready. 
+Staraj się zachować {\jap nobetan}, jeśli masz go na ręce.
+W szczególności, 3456 i 4567 powinny być zachowane aż do 1-{\jap shanten} lub nawet do {\jap tenpai}.
 \end{itembox}
 \normalcolor
 
