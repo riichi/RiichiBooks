@@ -637,7 +637,7 @@ Zatem w tej sytuacji powinniśmy odrzucić \InlineTile{p3}.
 W tym podrozdziale skupimy się na kombinacjach posiadających luźny kamień.
 Istnieją trzy ich warianty: {\jap nobetan}, {\jap nakabure} i sekwens z parą w środku.
 
-\subsubsection{Rozciągnięty sekwens ({\jap nobetan})} \label{sec:nobetan}
+\subsubsection{Rozciągnięty sekwens --- {\jap nobetan}} \label{sec:nobetan}
 	\index{stretched single shape@rozciągnięty sekwens}
 	\index{nobetan@{\jap nobetan}}
 {\jap Nobetan} to zbiór czterech kolejnych kamieni liczbowych, na przykład \InlineTile{p2345}.
@@ -734,131 +734,128 @@ W szczególności, 3456 i 4567 powinny być zachowane aż do 1-{\jap shanten} lu
 \normalcolor
 
 \bigskip
-
-
-\subsubsection{Bulging float ({\jap nakabukure}) shape}
+\subsubsection{Luźny kamień w środku --- {\jap nakabukure}}
 	\index{bulging@bulging float ({\jap nakabukure})} 
 	\index{nakabukure@{\jap nakabukure} (bulging float)}
 
-When we have a floating tile in the middle of a run (e.g., {\LARGE\wan{3}\wan{4}\wan{4}\wan{5}}), we have a {\bf bulging float} ({\jap nakabukure}) shape. 
-Bulging float shapes are quite good at producing side-wait protoruns. Any bulging float shapes from 2334 through 6778 can accept four kinds of tiles to produce a side-wait protorun and a complete run. Take {\LARGE\wan{3}\wan{4}\wan{4}\wan{5}}, for example. It can produce a side-wait protorun and a complete run if we draw any of {\LARGE\wan{2}\wan{3}\wan{5}\wan{6}}. 
-With this in mind, consider the following 2-away hand.
-\bigskip
-\begin{itembox}[r]{Hand with a bulging float shape}
-\bp
-\wan{3}\wan{4}\wan{4}\wan{5}\tong{4}\tong{6}\tong{8}\tong{8}\suo{1}\suo{3}\suo{5}\suo{5}\suo{6}\suo{8}
-\ep
-\vspace{-10pt}What would you discard? \vspace{-5pt}
-\end{itembox}
-Discarding {\LARGE\wan{4}} to break the bulging float shape is not ideal. Although doing so increases tile acceptance temporarily, the hand will be filled with closed-wait protoruns. Alternatively, you should discard {\LARGE\suo{8}} to maintain the bulging float shape. 
+{\jap Nakabukure} to kształt zawierający luźny kamień w środku sekwensu, np. \InlineTile{m3445}.
+Kombinacja ta jest bardzo przydatna w tworzeniu {\jap ryanmen}ów --- każdy z kształtów od 2334 do 6778 akceptuje cztery rodzaje kamieni, tworząc kompletny sekwens i {\jap ryanmen}.
+Przykładowo, weźmy \InlineTile{m3445} --- tworzy on sewens + {\jap ryanmen} po dobraniu któregokolwiek z \InlineTile{m2356}.
+
+Rozważmy następującą rękę:
+\begin{screen}
+	\CenteredLargeHand{m3445p4688s135568}
+	\vspace{-10pt}Który kamień należy odrzucić?\vspace{-5pt}
+\end{screen}
+Odrzucenie \InlineTile{m4} w celu rozbicia {\jap nakabukure} jest nieoptymalne.
+Zrobienie tego co prawda tymczasowo zwiększa {\jap ukeire}, jednak skończymy z wieloma {\jap kanchan}ami.
+Alternatywą jest odrzucenie \InlineTile{s8} w celu zachowania {\jap nakabukure}.
 
 \bigskip
-That being said, when this shape remains as is when a hand is ready, it does not make for a good wait. For example, consider the following ready hand. 
-\begin{itembox}[r]{Ready hand with a bulging float shape}
-\bp
-\wan{3}\wan{4}\wan{4}\wan{5}\tong{2}\tong{3}\suo{2}\suo{3}\suo{4}\bei\zhong\zhong\zhong~\tong{4}\\
-\hfill\footnotesize{Draw~~~~~~~~~~~}
-\ep 
-\vspace{-15pt}What would you discard? \vspace{-5pt}
-\end{itembox}
-\noindent
-Discarding {\LARGE\bei} to keep the bulging float shape {\LARGE\wan{3}\wan{4}\wan{4}\wan{5}} makes the wait of this hand pretty bad. It is waiting for {\LARGE\wan{4}}, but we are already using two of it in the hand, leaving only two winning tiles. We should rather discard {\LARGE\wan{4}} to wait for {\LARGE\bei}. 
+Jednakże {\jap nakabukure} nie produkuje dobrego czekania, gdy nasza ręka jest {\jap tenpai}.
+Przykładowo, rozważmy następującą (gotową) rękę:
+\begin{screen}
+	\CenteredLargeHand{m3445p23s234z4777~p4}
+	\vspace{-15pt}\hfill{\footnotesize{Dobór~~~~~~~~~}}\\
+	\vspace{-2pt}Który kamień należy odrzucić?\vspace{-5pt}
+\end{screen}
+Odrzucenie \InlineTile{z4} w celu zachowania {\jap nakabukure} \InlineTile{m3445} powoduje, że zostajemy z {\jap kanchan}em \InlineTile{m35}, czekając na jeden z {\bf dwóch} pozostałych \InlineTile{m4}.
+Lepszym wyjściem jest odrzucenie \InlineTile{m4} --- czekamy wówczas na \InlineTile{z4}.
 
-\vfill
 \color{MyRed}
-\begin{itembox}[c]{Four-tile complex shapes 2: {\jap nakabukure}}
+\begin{itembox}[c]{Czterokamienna kombinacja 2: {\jap nakabukure}}
 \normalcolor
-Try to keep a bulging float shape until a hand becomes 1-away.
+Staraj się zachować {\jap nakabukure} tak długo, jak ręka jest powyżej 1-{\jap shanten}.
 \end{itembox}\normalcolor
 
-\subsubsection{Skipping shape}
+\subsubsection{Sekwens plus dalszy sąsiad}
 \index{skipping shape}
-When we have a floating tile two tiles away from a run, we have a {\bf skipping shape}. For example, in a shape {\LARGE\wan{3}\wan{5}\wan{6}\wan{7}}, {\LARGE\wan{3}} is floating next next to a run {\LARGE\wan{5}\wan{6}\wan{7}}. {\LARGE\wan{3}} in a skipping shape is more valuable than isolated {\LARGE\wan{3}}, because it increases the kinds of tiles the hand can accept to produce a protorun or a 3-way side-wait shape. Table \ref{tbl:skipping} summarizes all the skipping shapes and the tiles each shape can accept. 
+Kombinacja ta składa się z sekwensu oraz luźnego kamienia oddalonego od niego o dwa, np. w kształcie \InlineTile{m3567} mamy luźny \InlineTile{m3} ,,sąsiadujący'' z sekwensem \InlineTile{m567}.
+Taki \InlineTile{m3} jest bardziej wartościowy od ,,zwyczajnego'' luźnego kamienia, gdyż akceptuje więcej rodzajów kamieni produkujących niekompletny sekwens lub kształt z trzystronnym czekaniem.
+Tabela \ref{tbl:skipping} podaje wszystkie warianty tego kształtu razem z kamieniami, które akceptują.
 
 {\begin{table}[h!]\centering\small\captionsetup{font=footnotesize}
-\caption{Types of skipping shapes} \label{tbl:skipping}
+\caption{Warianty kształtu ,,sekwens plus dalszy sąsiad''} \label{tbl:skipping}
 \begin{tabular}{l llll c}
 \toprule
-Shape & 3-way & 2-way & 1-way & Pair & Acceptance\\
+Kształt & 3-str. & 2-str. & 1-str. & Para & {\jap Ukeire}\\
 \midrule
-{\LARGE\wan{1}\wan{3}\wan{4}\wan{5}}
+\InlineTile{m1345}
 	&
-	& {\LARGE \wan{2}}
-	& {\LARGE \wan{3} \wan{6}}
-	& {\LARGE \wan{1}}
-	& 4 kinds--14 tiles\\ [\sep]
-{\LARGE\wan{2}\wan{4}\wan{5}\wan{6}}
-	& {\LARGE\wan{3}}
-	& 
-	& {\LARGE \wan{1} \wan{4} \wan{7}}
-	& {\LARGE \wan{2}}
-	& 5 kinds--18 tiles\\ [\sep]
-{\LARGE\wan{3}\wan{5}\wan{6}\wan{7}}
-	& {\LARGE\wan{4}}
-	& {\LARGE\wan{2}}
-	& {\LARGE \wan{1} \wan{5} \wan{8}}
-	& {\LARGE \wan{3}}
-	& 6 kinds--22 tiles\\ [\sep]
-{\LARGE\wan{4}\wan{6}\wan{7}\wan{8}}
-	& {\LARGE\wan{5}}
-	& {\LARGE\wan{3}}
-	& {\LARGE \wan{2} \wan{6} \wan{9}}
-	& {\LARGE \wan{4}}
-	& 6 kinds--22 tiles\\ [\sep]
-{\LARGE\wan{5}\wan{7}\wan{8}\wan{9}}
-	& 
-	& {\LARGE\wan{4} \wan{6}}
-	& {\LARGE\wan{3} \wan{7}}
-	& {\LARGE \wan{5}}
-	& 5 kinds--18 tiles\\ [\sep]
-{\LARGE\wan{1}\wan{2}\wan{3}\wan{5}}
-	& 
-	& {\LARGE \wan{4} \wan{6}}
-	& {\LARGE \wan{3} \wan{7}}
-	& {\LARGE \wan{5}}
-	& 5 kinds--18 tiles\\ [\sep]
-{\LARGE\wan{2}\wan{3}\wan{4}\wan{6}}
-	& {\LARGE\wan{5}}
-	& {\LARGE\wan{7}}
-	& {\LARGE \wan{1} \wan{4} \wan{8}}
-	& {\LARGE \wan{6}}
-	& 6 kinds--22 tiles\\ [\sep]
-{\LARGE\wan{3}\wan{4}\wan{5}\wan{7}}
-	& {\LARGE\wan{6}}
-	& {\LARGE\wan{8}}
-	& {\LARGE \wan{2} \wan{5} \wan{9}}
-	& {\LARGE \wan{7}}
-	& 6 kinds--22 tiles\\ [\sep]
-{\LARGE\wan{4}\wan{5}\wan{6}\wan{8}}
-	& {\LARGE\wan{7}}
-	& 
-	& {\LARGE \wan{3} \wan{6} \wan{9}}
-	& {\LARGE \wan{8}}
-	& 5 kinds--18 tiles\\ [\sep]
-{\LARGE\wan{5}\wan{6}\wan{7}\wan{9}}
+	& \InlineTile{m2}
+	& \InlineTile{m3~6}
+	& \InlineTile{m1}
+	& 4 rodz.--14 kam.\\ [\sep]
+\InlineTile{m2456}
+	& \InlineTile{m3}
 	&
-	& {\LARGE \wan{8}}
-	& {\LARGE \wan{4} \wan{7}}
-	& {\LARGE \wan{9}}
-	& 4 kinds--14 tiles\\ [\sep]
+	& \InlineTile{m1~4~7}
+	& \InlineTile{m2}
+	& 5 rodz.--18 kam.\\ [\sep]
+\InlineTile{m3567}
+	& \InlineTile{m4}
+	& \InlineTile{m2}
+	& \InlineTile{m1~5~8}
+	& \InlineTile{m3}
+	& 6 rodz.--22 kam.\\ [\sep]
+\InlineTile{m4678}
+	& \InlineTile{m5}
+	& \InlineTile{m3}
+	& \InlineTile{m2~6~9}
+	& \InlineTile{m4}
+	& 6 rodz.--22 kam.\\ [\sep]
+\InlineTile{m5789}
+	&
+	& \InlineTile{m4~6}
+	& \InlineTile{m3~7}
+	& \InlineTile{m5}
+	& 5 rodz.--18 kam.\\ [\sep]
+\InlineTile{m1235}
+	&
+	& \InlineTile{m4~6}
+	& \InlineTile{m3~7}
+	& \InlineTile{m5}
+	& 5 rodz.--18 kam.\\ [\sep]
+\InlineTile{m2346}
+	& \InlineTile{m5}
+	& \InlineTile{m7}
+	& \InlineTile{m1~4~8}
+	& \InlineTile{m6}
+	& 6 rodz.--22 kam.\\ [\sep]
+\InlineTile{m3457}
+	& \InlineTile{m6}
+	& \InlineTile{m8}
+	& \InlineTile{m2~5~9}
+	& \InlineTile{m7}
+	& 6 rodz.--22 kam.\\ [\sep]
+\InlineTile{m4568}
+	& \InlineTile{m7}
+	&
+	& \InlineTile{m3~6~9}
+	& \InlineTile{m8}
+	& 5 rodz.--18 kam.\\ [\sep]
+\InlineTile{m5679}
+	&
+	& \InlineTile{m8}
+	& \InlineTile{m4~7}
+	& \InlineTile{m9}
+	& 4 rodz.--14 kam.\\ [\sep]
 \bottomrule
 \end{tabular}
 \end{table}}
 
-\bigskip
-Bearing in mind that {\LARGE\wan{3}} of {\LARGE\wan{3}\wan{5}\wan{6}\wan{7}} is more valuable than isolated {\LARGE\wan{3}}, consider the following hand. 
-\begin{itembox}[r]{Hand with a skipping shape}
-\bp
-\wan{3}\wan{7}\wan{8}\tong{5}\tong{6}\tong{7}\suo{2}\suo{4}\suo{6}\suo{7}\zhong\zhong\zhong~\tong{3}\\
-\hfill\footnotesize{Draw~~~~~~~~~~~}
-\ep
-\vspace{-15pt}What would you discard? \vspace{-5pt}
-\end{itembox}
-\noindent
-We should keep {\LARGE\tong{3}} and discard {\LARGE\wan{3}} instead. This is because {\LARGE\tong{3}} is a part of a skipping shape {\LARGE\tong{3}\tong{5}\tong{6}\tong{7}}, but {\LARGE\wan{3}} is an isolated floating tile. 
+\newpage
+Mając na uwadze fakt, że \InlineTile{m3} w kształcie \InlineTile{m3567} jest bardziej wartościowy od luźnego \InlineTile{m3}, rozważmy następującą rękę:
+\begin{screen}
+	\CenteredLargeHand{m378p567s2467z777~p3}
+	\vspace{-15pt}\hfill{\footnotesize{Dobór~~~~~~~~~}}\\
+	\vspace{-2pt}Który kamień należy odrzucić?\vspace{-5pt}
+\end{screen}
+\InlineTile{p3} jest teraz częścią kształtu \InlineTile{p3567} --- powinniśmy go zatem zachować i zamiast niego odrzucić luźny \InlineTile{m3}.
 
 \bigskip
-As we can see in Table \ref{tbl:skipping}, skipping shapes with a terminal tile (1345 and 5679) are also valuable. The 1 of 1345 and the 9 of 5679 can accept more tiles than an isolated 2 or 8 (let alone than an isolated 1 or 9). 
+Jak widać w Tabeli \ref{tbl:skipping}, nawet kształty, w którym rolę ,,luźnego'' kamienia pełni kamień skrajny (1345 i 5679) są przydatne.
+\InlineTile{m1} w kształcie \InlineTile{m1345} i \InlineTile{m9} w kształcie \InlineTile{m5679} akceptują więcej kamieni od luźnych \InlineTile{m2} czy \InlineTile{m8}, nie wspominając o \InlineTile{m1} i \InlineTile{m9}.
 
 \newpage
 \section{Waits} \label{sec:waits}
